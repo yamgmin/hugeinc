@@ -26,44 +26,74 @@ p {font-family: Galaxie-Book;font-size: 14px; color: black; font-weight: 100;}
             
     .home_mark {font-family: HugeGothic-Bold; font-size: 36px; font-weight: 600px; width: 74px; height: 74px;; 
         position: fixed; left : calc(50vw - 37px); top : 50px; display: flex; justify-content: center; align-items: center;z-index: 200;}
-    .home_mark1 {width: 48px; height: 48px;text-align: center; line-height: 55px;}
+    
+    .home_mark div {width: 48px; height: 48px;text-align: center; line-height: 55px;}
+    
     .home_mark2 {font-family: HugeGothic-Bold; font-size: 300px; font-weight:600px; width:100vw; height: 100vh;; 
         padding: 0; display: flex; justify-content: center; align-items: center; position: static; position: relative;}
         .home_Hello {  margin: auto; display: flex; justify-content: center; align-items: center; }
         .home_bottom_bar {height:90px; width:100vw; border: none;  position: absolute; bottom: 0; display: flex; justify-content: center; align-items: center;
         flex-direction: column}
+    
     .home_bottom_line { height: 30px; border-left: 1px solid;}
+
+    /* home_section css */
 
     .home_section
     .home_section_wrap {width: 100vw; height: 100vh; box-sizing: border-box; display: flex;}
-    .home_section_index {width: 12.5vw; height: 100vh; padding-top: 20vh; box-sizing: border-box;}
+    .home_section_index {width: calc(12.5vw + 5px); height: 100vh; padding-top: 20vh; box-sizing: border-box;}
+    
     .home_section_index_wrap {display:flex ; justify-content: flex-end;}
-    .home_section_index_number {font-family: HugeGothic-Bold; font-size: 22px; font-weight: 100; line-height: 22px; letter-spacing: 1px;}
-    .home_section_index_line {border-bottom:  1px solid;  width: 5vw; height: 11px; margin-left: 15px;}
+        .home_section_index_wrap p {font-family: HugeGothic-Bold; font-size: 22px; font-weight: 100; line-height: 22px; letter-spacing: 1px;}
+        .home_section_index_wrap div {border-bottom: 1px solid; width: 5vw; height: 11px; margin-left: 15px;}
+    
     .home_section_content {width: 75vw;height: 100vh; padding: 20vh 0; box-sizing: border-box; padding-left: 15px;}
+    
     .home_section_content_wrap {width: 45%; height: 60vh;}
-    .home_section_content_subtitle {font-family: HugeGothic-Bold; font-size:22px;font-weight:100; line-height:22px;letter-spacing: 1px;}
+        .home_section_content_wrap div {font-family: HugeGothic-Bold; font-size:22px;font-weight:100; line-height:22px;letter-spacing: 1px;}
+    
     .home_section_content_subwrap {width:100%; height:calc(100% - 22px); display:flex; flex-direction:column; justify-content:center;}
-    .home_section_content_title {font-family: HugeGothic-Bold; font-size:80px;font-weight:100;}
-    .home_section_content_title_hr {border-top:  1px solid; width: 5vw; margin: 5% 0;}
-    .home_section_01_content_discription {font-family:Galaxie-Book; font-size:18px;  line-height:28px; width:85%;}
+        .home_section_content_subwrap h2 {font-family: HugeGothic-Bold; font-size:80px;font-weight:100; line-height: 80px;}
+        .home_section_content_subwrap div {border-top: 1px solid; width: 5vw; margin: 5% 0;}
+        .home_section_content_subwrap p {font-family:Galaxie-Book; font-size:18px;  line-height:28px; width:85%;}
+    
+    
+    /* footer css */
+    .home_footer {width: 100vw; height: 240px; padding:70px 0 80px; box-sizing: border-box;}
 
+    .foot_content_wrap {}
 
+        .home_footer > div {width: 100vw; height: 90px;  padding : 0 calc(12.5vw + 15px); display: flex; justify-content: space-between; }
 
-    .home_section_08_bottom_bar {}
+    .footer_content_left {display: flex; align-items: center;}
+        .footer_content_left>div {font-family: HugeGothic-Bold; font-size: 36px; line-height: 36px; border-right: 1px solid  #8888; padding-right: 32px; margin-right: 32px; letter-spacing: 1px;}
+        .footer_content_left>p {font-family: HugeGothic-bold; font-size: 18px; line-height: 36px; letter-spacing: 1px; }
 
+    .footer_content_right {display:flex;flex-direction: column; }
+        .footer_content_right > div {font-family: HugeGothic-Bold; color : #c8c8c8; font-size: 14px; line-height: 24px; letter-spacing: 1px;margin-bottom: 10px;}
+        .footer_content_right > p {font-family: Galaxie-book; color : #c8c8c8; font-size: 12px; line-height: 20px; text-align: right;}
+
+        .footer_content_right a {margin-right: 16px;}
+        .footer_content_right a:last-child {margin-right : 0;}
+        .footer_content_right a:nth-child {margin-right : 0;}
+    
+    /* 배경 색 */
+    .bg_white {background-color: white;}
+    .bg_black {background-color: black;}
+    
     /* 배경 */
-    .background_white {background-color: white;}
-    .background_1 {background-image: url(../img/hugeinc.png)}
-    .background_2 {background-image: url(../img/hugeinc9png.png)}
-    .background_3 {background-image: url(../img/hugeinc10.png)}
-    .background_4 {background-image: url(../img/hugeinc12.png)}
-    .background_5 {background-image: url(../img/hugeinc2.jpg)}
-    .background_6 {background-image: url(../img/hugeinc3.jpg)}
-    .background_7 {background-image: url(../img/hugeinc1.jpg)}
+    .bg_1 {background-image: url(../img/hugeinc.png)}
+    .bg_2 {background-image: url(../img/hugeinc9png.png)}
+    .bg_3 {background-image: url(../img/hugeinc10.png)}
+    .bg_4 {background-image: url(../img/hugeinc12.png)}
+    .bg_5 {background-image: url(../img/hugeinc2.jpg)}
+    .bg_6 {background-image: url(../img/hugeinc3.jpg)}
+    .bg_7 {background-image: url(../img/hugeinc1.jpg)}
 
     /* 색 */
 
     .white {color:white}
     .black {color:black}
     .ea178c {color: #ea178c;}
+    .c8c8c8 {color:#c8c8c8;}
+
