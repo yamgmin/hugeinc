@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-
-<html>
+<html lang="en">
 <head>
     <title>Huge Inc</title>
     <meta charset="UTF-8">
@@ -9,68 +7,128 @@
     <meta name="author" content="yamgmin">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
     <meta name="viewport" content="width=device-width, user-scalable=no">
-
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Nanum+Myeongjo&display=swap">
-    <link rel="stylesheet" type="text/css" href="css/destyle.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Nanum+Myeongjo&display=swap"> <!-- 뷰 포트 세팅 -->
+<!-- css 링크 -->
+    <link rel="stylesheet" type="text/css" href="css/destyle.css"> <!--css 초기화-->
     
-    <link rel="stylesheet" type="text/css" href="css/home.css">
+    <link rel="stylesheet" type="text/css" href="css/home.css"> <!-- home 화면 css -->
+<!-- javascript -->
+<script>
 
-        <script>
+    var header_state = 0; /* 로고 클릭 상태*/
 
-        </script>
+        function logoClick() {
+            if (header_state == 0 ) {
+                document.getElementById("home_header").style ="visibility:visible;";
+                header_state = 1; } /* 해더 보이기 */
+            else {document.getElementById("home_header").style ="visibility:hidden;";
+                header_state = 0; } /* 해더 안보이기 */
 
+        }
+</script>
 
-    </head>
+</head>
+
 <body>
+<!--메인화면 시작-->
     <div>
         <div class="home_section_wrap" style="position: relative;">
             <div class="home_mark bg_white">
             <div class="ea178c"> H</div>
-            </div>
+        </div>
             <div class="home_mark2 bg_white">
             <div class="home_Hello bg_white">Hello.</h1></div>
             <div class="home_bottom_bar bg_white">
             <p style="line-height: 60px;">Today at Huge.</p>
             <div class="home_bottom_line black"></div>
-            </div>
         </div>
         </div>
-        </div>
+    </div>
+       
 
     </div>
-    <!-- 1페이지 섹션 시작--> 
-     <section class="home_section"> <!--home 첫번째 섹션 시작-->
-         <div class="home_section_wrap bg_1 "> <!--home 첫번째 섹션 wrap 시작-->
-             <div class="home_section_index"> <!--home 첫번째 섹션 index 시작-->
-                 <div class="home_section_index_wrap">
-                     <p class="white">01 </p>
-                     <div class="white"></div>
-             </div>
-             </div>  <!--home 첫번째 섹션 끝-->
- 
-         <div class="home_section_content">  <!--home 첫번째 섹션 content 시작-->
-             <div class="home_section_content_wrap">
-                 <div class="white">win.</div>
- 
-                 <div class="home_section_content_subwrap">
-                     <h2 class="white">Huge Thanks.</h2>
-                     <div class="white"></div>
-                     <p class="white">Campaign US named Huge its 2019 Innovation Agency of the year.</p>
-                 </div>
-             </div> <!--home 첫번째 섹션 content 끝-->
- 
-         </div>
-         <div class="home_section_o1_detail"> <!--home 첫번째 섹션 detail 시작-->
- 
-         </div> <!--home 첫번째 섹션 detail 끝-->
-         </div> <!--home 첫번째 섹션 warp 끝-->
- 
- 
-     </section>
-     <!--1페이지 섹션 끝-->
-    </div>
-   <!-- 2페이지 섹션 시작--> 
-    <section class="home_section"> <!--home 두번째 섹션 시작-->
+<!--메인화면 끝-->
+
+
+    <div id="logo" onclick="logoClick()">H</div>
+
+<!-- 로고 시작-->
+    <header id="home_header">
+    
+        <nav class="gnb"> 
+
+            <ul class="menu_wrap">
+                <li>
+                    <a href="index.html">Hello.</a>
+                    <p>Today at Huge.</p>
+                    <div></div>
+                </li>
+                <li>
+                    <a href="#home_section02">Work.</a>
+                    <p>What we've made.</p>
+                    <div></div>
+                </li>
+                <li>
+                    <a>About.</a>
+                    <p>Who we are</p>
+                    <div></div>
+                </li>
+                <li>
+                    <a>Carrers.</a>
+                    <p>Join the team.</p>
+                    <div></div>
+                </li>
+                <li>
+                    <a>Contact.</a>
+                    <p>Get in touch.</p>
+                    <div></div>
+                </li>
+                
+            </ul>
+    
+            <div class="gnb_aside"> 
+                <p>Explore our thought leadership at</p>
+                <a>MAGENTA<span>.</span></a>
+            </div>
+        </nav>
+
+    </header>
+ <!-- 로고 끝 -->
+
+   
+<!-- 1페이지 섹션 시작--> 
+    <section id="home_section01"> <!--home 첫번째 섹션 시작-->
+        <div class="home_section_wrap bg_1 "> <!--home 첫번째 섹션 wrap 시작-->
+            <div class="home_section_index"> <!--home 첫번째 섹션 index 시작-->
+                <div class="home_section_index_wrap">
+                    <p class="white">01 </p>
+                    <div class="white"></div>
+            </div>
+            </div>  <!--home 첫번째 섹션 끝-->
+
+        <div class="home_section_content">  <!--home 첫번째 섹션 content 시작-->
+            <div class="home_section_content_wrap">
+                <div class="white">win.</div>
+
+                <div class="home_section_content_subwrap">
+                    <h2 class="white">Huge Thanks.</h2>
+                    <div class="white"></div>
+                    <p class="white">Campaign US named Huge its 2019 Innovation Agency of the year.</p>
+                </div>
+            </div> <!--home 첫번째 섹션 content 끝-->
+
+        </div>
+        <div class="home_section_o1_detail"> <!--home 첫번째 섹션 detail 시작-->
+
+        </div> <!--home 첫번째 섹션 detail 끝-->
+        </div> <!--home 첫번째 섹션 warp 끝-->
+
+
+    </section>
+<!--1페이지 섹션 끝-->
+
+<!--2페이지 섹션 시작-->
+    <section id="home_section02"> <!--home 두번째 섹션 시작-->
         <div class="home_section_wrap bg_2"> <!--home 두번째 섹션 wrap 시작-->
             <div class="home_section_index"> <!--home 두번째 섹션 index 시작-->
                 <div class="home_section_index_wrap">
@@ -98,11 +156,11 @@
 
 
     </section>
-    <!--2페이지 섹션 끝-->
+<!--2페이지 섹션 끝-->
 
 
-    <!-- 3페이지 섹션 시작--> 
-    <section class="home_section"> <!--home 세번째 섹션 시작-->
+<!-- 3페이지 섹션 시작--> 
+    <section id="home_section03"> <!--home 세번째 섹션 시작-->
     <div class="home_section_wrap bg_3"> <!--home 세번째 섹션 wrap 시작-->
         <div class="home_section_index"> <!--home 세번째 섹션 index 시작-->
             <div class="home_section_index_wrap">
@@ -129,11 +187,11 @@
     </div> <!--home 세번째 섹션 warp 끝-->
 
 
-</section>
+    </section>
 <!--3페이지 섹션 끝-->
     
 <!-- 4페이지 섹션 시작--> 
-    <section class="home_section"> <!--home 네번째 섹션 시작-->
+    <section id="home_section04"> <!--home 네번째 섹션 시작-->
         <div class="home_section_wrap bg_4"> <!--home 네번째 섹션 wrap 시작-->
             <div class="home_section_index"> <!--home 네번째 섹션 index 시작-->
                 <div class="home_section_index_wrap">
@@ -161,40 +219,41 @@
     
     
     </section>
-    <!--5페이지 섹션 끝-->
-        <!-- 5페이지 섹션 시작--> 
-        <section class="home_section"> <!--home 다섯번째 섹션 시작-->
-            <div class="home_section_wrap bg_5"> <!--home 다섯번째 섹션 wrap 시작-->
-                <div class="home_section_index"> <!--home 다섯번째 섹션 index 시작-->
-                    <div class="home_section_index_wrap">
-                        <p class="black" >05 </p>
-                        <div class="black"></div>
-                </div>
-                </div>  <!--home 다섯번째 섹션 끝-->
-        
-            <div class="home_section_content">  <!--home 다섯번째 섹션 content 시작-->
-                <div class="home_section_content_wrap">
-                    <div class="black">Leadership.</div>
-        
-                    <div class="home_section_content_subwrap">
-                            <h2 class="black">Hello Fura.</h2>
-                            <div class="black"></div>
-                            <p class="black">Huge welcomes Fura Johannesdottir as Chief Design Officer.</p>
-                    </div>
-                </div> <!--home 다섯번째 섹션 content 끝-->
-        
+<!--4페이지 섹션 끝-->
+
+<!-- 5페이지 섹션 시작--> 
+    <section id="home_section05"> <!--home 다섯번째 섹션 시작-->
+        <div class="home_section_wrap bg_5"> <!--home 다섯번째 섹션 wrap 시작-->
+            <div class="home_section_index"> <!--home 다섯번째 섹션 index 시작-->
+                <div class="home_section_index_wrap">
+                    <p class="black" >05 </p>
+                    <div class="black"></div>
             </div>
-            <div class="home_section_o5_detail"> <!--home 다섯번째 섹션 detail 시작-->
+            </div>  <!--home 다섯번째 섹션 끝-->
         
-            </div> <!--home 다섯번째 섹션 detail 끝-->
-            </div> <!--home 다섯번째 섹션 warp 끝-->
+        <div class="home_section_content">  <!--home 다섯번째 섹션 content 시작-->
+            <div class="home_section_content_wrap">
+                <div class="black">Leadership.</div>
+        
+                <div class="home_section_content_subwrap">
+                        <h2 class="black">Hello Fura.</h2>
+                        <div class="black"></div>
+                        <p class="black">Huge welcomes Fura Johannesdottir as Chief Design Officer.</p>
+                </div>
+            </div> <!--home 다섯번째 섹션 content 끝-->
+        
+        </div>
+        <div class="home_section_o5_detail"> <!--home 다섯번째 섹션 detail 시작-->
+        
+        </div> <!--home 다섯번째 섹션 detail 끝-->
+        </div> <!--home 다섯번째 섹션 warp 끝-->
         
         
-        </section>
-        <!--5페이지 섹션 끝-->
+    </section>
+<!--5페이지 섹션 끝-->
             
-        <!-- 6페이지 섹션 시작--> 
-    <section class="home_section"> <!--home 여섯번째 섹션 시작-->
+<!-- 6페이지 섹션 시작--> 
+    <section id="home_section06"> <!--home 여섯번째 섹션 시작-->
         <div class="home_section_wrap bg_6"> <!--home 여섯번째 섹션 wrap 시작-->
             <div class="home_section_index"> <!--home 여섯번째 섹션 index 시작-->
                 <div class="home_section_index_wrap">
@@ -222,9 +281,9 @@
     
     
     </section>
-    <!--6페이지 섹션 끝-->
-        <!-- 7페이지 섹션 시작--> 
-        <section class="home_section"> <!--home 일곱번째 섹션 시작-->
+<!--6페이지 섹션 끝-->
+<!-- 7페이지 섹션 시작--> 
+    <section id="home_section07"> <!--home 일곱번째 섹션 시작-->
             <div class="home_section_wrap bg_7"> <!--home 일곱번째 섹션 wrap 시작-->
                 <div class="home_section_index"> <!--home 일곱번째 섹션 index 시작-->
                     <div class="home_section_index_wrap">
@@ -249,81 +308,40 @@
         
             </div> <!--home 일곱번째 섹션 detail 끝-->
             </div> <!--home 일곱번째 섹션 warp 끝-->
+    </section>
+<!-- 7페이지 섹션 끝-->
+
+<!-- footer 시작 -->
+            <footer class="home_footer bg_black white">
+                <div class="footer_content_wrap">
+                    <div class="footer_content_left ">
+                        <div class="white">HUGE</div>
+                        <p class="white">Make something you love.</p>
+                    </div>
+    
+                    <div class="footer_content_right">
+                        <div><a href="hello.html">Hello</a> 
+                            <a href="work.html">Work</a> 
+                            <a href="about.html">About</a> 
+                            <a href="careers.html">Careers</a> 
+                            <a href="contact" style="margin-right: 0;">Contact</a></div>
+                        <p class="footer_aside">© 2020 Huge LLC. Legal.<br>
+                            CCPA Privacy Notice<br>
+                            Modern Slavery Act Statement
+                        </p>
+                    </div>
+                </div>
+    
+    
+    
+            </footer>
+<!-- footer 끝 -->
+    
         
         
-        </section>
-        <!--7페이지 섹션 끝-->
-
-        <!-- 내가한거
-        <section>
-            <div style="width: 100vw; height: 25vh; box-sizing: border-box; display: flex; background-color:  black;">
-                <div style="width: 100%; height: 100%; display: flex; justify-content: space-between; margin: 0 12.5vw;" >
-                    
-                    <div style="width: 25vw; height: 25vh; display: flex; justify-content: flex-start; align-items: center; ">
-                        
-                        <div style="font-family: HugeGothic-Bold; font-weight: 100; font-size:36px; color:white;"> HUGE
-
-                        </div>
-                        <div style="border-right: 2px solid; color: white; height: 30px; display: flex; justify-content: center;align-items: center; margin: 0 10%;"> 
-                        </div>
-                        <div style="font-family: HugeGothic-Bold; font-size: 20px; font-weight: 100; color: white;">Make something you love.
-                        </div>
-
-                    </div>
-                    <div style="width: 25vw; height: 25vh;  ">
-                        <div style=" width: 100%; height:140px; display: flex; align-items: center;  flex; justify-content: flex-end; ">
-                            <div style="font-family: HugeGothic-Bold; font-size:16px;font-weight:100;color:white; margin: 0 1%;">Hello</div>
-                            <div style="font-family: HugeGothic-Bold; font-size:16px;font-weight:100;color:white; margin: 0 1%;">Work</div>
-                            <div style="font-family: HugeGothic-Bold; font-size:16px;font-weight:100;color:white; margin: 0 1%;">About</div>
-                            <div style="font-family: HugeGothic-Bold; font-size:16px;font-weight:100;color:white; margin: 0 1%;">Careers</div>
-                            <div style="font-family: HugeGothic-Bold; font-size:16px;font-weight:100;color:white;  ">Contact</div>
-                        </div>
-                         
-                            <div style="width:100%; height: 10%; display: flex; justify-content: flex-end; font-family: alaxie-Book; color:white; ">© 2020 Huge LLC. Legal.</div>
-                            <div style=" width:100%; height: 10%; display: flex; justify-content: flex-end;font-family: alaxie-Book; color:white">CCPA Privacy Notice</div>
-                            <div style="width:100%; height: 10%; display: flex; justify-content: flex-end;font-family: alaxie-Book; color:white">Modern Slavery Act Statement</div>
-                        
-                    </div>
-                        
-                    
-                        
-                  
-                     
-                    </div>
-                    </div>
-                </div>
-            
-            </div>
-            
-        </section>
-        내가한거 끝-->
-
-        <!--보고한거-->
-        <div class="home_footer bg_black white">
-            <div class="footer_content_wrap">
-                <div class="footer_content_left ">
-                    <div class="white">HUGE</div>
-                    <p class="white">Make something you love.</p>
-                </div>
-
-                <div class="footer_content_right">
-                    <div><a href="hello.html">Hello</a> 
-                        <a href="work.html">Work</a> 
-                        <a href="about.html">About</a> 
-                        <a href="careers.html">Careers</a> 
-                        <a href="contact" style="margin-right: 0;">Contact</a></div>
-                    <p class="footer_aside">© 2020 Huge LLC. Legal.<br>
-                        CCPA Privacy Notice<br>
-                        Modern Slavery Act Statement
-                    </p>
-                </div>
-            </div>
-
-
-
-        </div>
+    </section>
+    
 
 
 </body>
-
 </html>
