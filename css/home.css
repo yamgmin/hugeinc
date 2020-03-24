@@ -11,10 +11,6 @@
 h1 {font-family: HugeGothic-Bold;font-size: 300px; color: black; font-weight: 600; }
 p {font-family: Galaxie-Book;font-size: 14px; color: black; font-weight: 100;}
             
-    .home_section {width: 100vw; height: 100vh;}
-    .home_section_wrap {width: 100vw; height: 100vh;}
-    .logo{width: 60px; font-size: 24px; color: deeppink; font-family: HugeGothic-Bold; position: fixed; top:60px; left:950px;}
-    .home_section_h1 {justify-content: center;}
             
     .width_100vw {width: 100vw;}
     .margin_auto {margin: auto;}
@@ -23,6 +19,8 @@ p {font-family: Galaxie-Book;font-size: 14px; color: black; font-weight: 100;}
     .margin_top_108{margin-top: 108px;}
     .margin_top_144{margin-top: 144px;}
     .margin_top_180{margin-top: 180px;}
+
+    /* 메인화면 css */
             
     .home_mark {font-family: HugeGothic-Bold; font-size: 36px; font-weight: 600px; width: 74px; height: 74px;; 
         position: fixed; left : calc(50vw - 37px); top : 50px; display: flex; justify-content: center; align-items: center;z-index: 200;}
@@ -31,15 +29,49 @@ p {font-family: Galaxie-Book;font-size: 14px; color: black; font-weight: 100;}
     
     .home_mark2 {font-family: HugeGothic-Bold; font-size: 300px; font-weight:600px; width:100vw; height: 100vh;; 
         padding: 0; display: flex; justify-content: center; align-items: center; position: static; position: relative;}
-        .home_Hello {  margin: auto; display: flex; justify-content: center; align-items: center; }
-        .home_bottom_bar {height:90px; width:100vw; border: none;  position: absolute; bottom: 0; display: flex; justify-content: center; align-items: center;
+    
+    .home_Hello {  margin: auto; display: flex; justify-content: center; align-items: center; }
+    
+    .home_bottom_bar {height:90px; width:100vw; border: none;  position: absolute; bottom: 0; display: flex; justify-content: center; align-items: center;
         flex-direction: column}
     
     .home_bottom_line { height: 30px; border-left: 1px solid;}
 
+    /* logo css */
+
+    header {width:100vw; height: 440px; position: fixed; left: 0; top : 0;z-index: 100; background-color : #f4f4f4; visibility: hidden; }
+    nav {width: 100vw; height: 440px; display : flex; justify-content: center; align-items: center; box-sizing : border-box; position: relative;}
+
+    #logo {width:74px; height: 74px; font-family: HugeGothic-Bold;display: flex; justify-content: center; align-items: center; font-size: 32px; color: #ea178c; background-color: white; position: fixed; top:50px; left : calc(50vw - 37px); z-index: 200;}
+
+    .menu_wrap {width:1050px; height : 90px; display: flex; justify-content: space-between;}
+        .menu_wrap li {width: 190px; height: 90px; display: flex; flex-direction: column;align-items: center;}
+            .menu_wrap li a {font-family: HugeGothic-Bold; font-size:36px; color: black; line-height: 36px;}
+        .menu_wrap li a:hover {color: #ea178c; cursor: pointer;}
+            .menu_wrap li p {font-family: Galaxie-Book; font-size: 14px;  letter-spacing: -1px; line-height: 28px;}
+            .menu_wrap li div {border-bottom: 1px solid black; width: 48px; height: 36px;}
+
+    .gnb_aside {width:320px; height: 22px; position: absolute; top:350px; left : calc (50 - 160px); display: flex; justify-content: center; }
+        .gnb_aside p {font-family: Galaxie-Book; font-size: 14px; letter-spacing: -1px; line-height: 22px;}
+        .gnb_aside a {font-family: HugeGothic-Bold; font-size: 16px; line-height: 21px;margin-left: 6px; padding-top: 1px;}
+            .gnb_aside a:hover {color: #ea178c; cursor: pointer;}
+            .gnb_aside a span {color:#ea178c}
+
+    #home_02 {background-image: url(img/hugeinc9png.png); background-size: cover;}
+    #home_02 > h1 {color: white; font-size: 120px;}
+
+    /* home_section */
+
+    #home_section1 {}
+    #home_section2 {}
+    #home_section3 {}
+    #home_section4 {}
+    #home_section5 {}
+    #home_section6 {}
+    #home_section7 {}
+
     /* home_section css */
 
-    .home_section
     .home_section_wrap {width: 100vw; height: 100vh; box-sizing: border-box; display: flex;}
     .home_section_index {width: calc(12.5vw + 5px); height: 100vh; padding-top: 20vh; box-sizing: border-box;}
     
@@ -63,7 +95,7 @@ p {font-family: Galaxie-Book;font-size: 14px; color: black; font-weight: 100;}
 
     .foot_content_wrap {}
 
-        .home_footer > div {width: 100vw; height: 90px;  padding : 0 calc(12.5vw + 15px); display: flex; justify-content: space-between; }
+        .home_footer > div {width: 100vw; height: 90px;  padding : 0 calc(12.5vw + 15px); display: flex; justify-content: space-between; min-width: 1400px; }
 
     .footer_content_left {display: flex; align-items: center;}
         .footer_content_left>div {font-family: HugeGothic-Bold; font-size: 36px; line-height: 36px; border-right: 1px solid  #8888; padding-right: 32px; margin-right: 32px; letter-spacing: 1px;}
