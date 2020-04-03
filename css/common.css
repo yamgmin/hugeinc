@@ -6,11 +6,65 @@
     font-family:HugeGothic-Bold;
     src: url(../font/HugeGothic-Bold.woff);
             }
-
+    /* 처음
+    
     h1 {font-family: HugeGothic-Bold;font-size: 300px; color: black; font-weight: 600; }
-    p {font-family: Galaxie-Book;font-size: 14px; color: black; font-weight: 100;}
-    h2 {font-size: 80px; font-weight: 600; line-height: 100px;}
-            
+    p {font-family: Galaxie-Book;font-size: 14px; color: black; font-weight: 100; -webkit-font-smoothing: antialiased;}
+    h2 {font-size: 80px; font-weight: 600; line-height: 100px;-webkit-font-smoothing: antialiased;}
+    
+    .h2_home {font-family: HugeGothic-Bold; font-size: 80px; line-height: 84px; letter-spacing: -2px; font-weight: 400; -webkit-font-smoothing: antialiased;}
+    .h3_work {font-family: HugeGothic-Bold; font-size: 80px; font-weight: 400; letter-spacing: -2px; line-height: 84px; -webkit-font-smoothing: antialiased;}
+
+    .h2_work_icon {font-family: HugeGothic-Bold; font-size: 44px; line-height: 44px; font-weight: 400; -webkit-font-smoothing: antialiased;}
+
+    .h5_home {font-family: HugeGothic-Bold; font-size: 22px; line-height: 15.9999px; font-weight: 400; font-family: HugeGothic-Bold;-webkit-font-smoothing: antialiased;}
+
+    .h6_footer_menu {font-family: HugeGothic-Bold; font-size: 14px; line-height: 20px; font-weight: 400;-webkit-font-smoothing: antialiased;}
+    
+    .div_work {font-family:Galaxie-Book; font-size: 56px; font-weight: 400; line-height: 70px; letter-spacing: -4px; -webkit-font-smoothing: antialiased;}
+
+    .div_work_section {font-family: HugeGothic-Bold; font-size: 22px; line-height: 15.9999px; font-weight: 400; -webkit-font-smoothing: antialiased;}
+
+    .p_home {font-family: Galaxie-Book; font-size: 18px; line-height: 34px; font-weight:400; color: white; letter-spacing: 0.27504px;-webkit-font-smoothing: antialiased;}
+    
+    .p_caption {font-family: Galaxie-Book; font-size:12px; font-weight: 400; line-height: 22.6667px; letter-spacing: 0.27504px; color: white;-webkit-font-smoothing: antialiased;}
+
+    .h1_about {font-family: HugeGothic-Bold; font-size: 170px; font-weight: 400; line-height: 169px; -webkit-font-smoothing: antialiased;}
+
+    .h2_about {font-family:Galaxie-Book; font-size: 56px; font-weight: 400; line-height: 70px; letter-spacing: -4px; -webkit-font-smoothing: antialiased;}
+    
+    .h2_about_mid {font-family: HugeGothic-Bold;font-size: 44px; font-weight: 400; line-height: 45.9998px;-webkit-font-smoothing: antialiased;}
+
+    .h3_about {font-family: HugeGothic-Bold; font-size: 24px; font-weight: 400; line-height: 30px; -webkit-font-smoothing: antialiased;}
+    */
+
+    h1, h2, h3 ,h4 ,h5 , h6 {font-family: HugeGothic-Bold; font-weight: 400; -webkit-font-smoothing: antialiased;}
+    
+    p {font-family: Galaxie-Book; -webkit-font-smoothing: antialiased;}
+    
+    h1 {font-size: 170px; line-height: 170px;}
+    h2 {font-size: 80px; line-height: 84px; letter-spacing: -2px;}
+    h3 {font-size: 56px; line-height: 70px; letter-spacing: -4px;}
+    h4 {font-size: 44px; line-height: 44px;}
+    h5 {font-size: 24px; line-height: 30px;}
+    h6 {font-size: 22px; line-height: 26px;}
+    
+    p {font-size: 18px; line-height: 34px; letter-spacing: -0.27504;}
+
+    .h3_serif {font-family: Galaxie-Book; font-size: 56px; line-height: 70px; letter-spacing: -4px;}
+    
+    .h4 {font-size: 44px; line-height: 44px;}
+
+    .h5 {font-size: 24px; line-height: 30px;}
+
+    .h6 {font-size: 22px; line-height: 26px;}
+
+    .p_small {font-size: 16px; letter-spacing: -1px;}
+    .p_small_2 {font-size: 12px; line-height: 22.6667px; letter-spacing: -0.27504px;}
+    
+    .p_sans {font-size: 14px; line-height: 20px;}
+
+    
             
     .width_100vw {width: 100vw;}
     .margin_auto {margin: auto;}
@@ -71,6 +125,6 @@
         .footer_content_right > div {font-family: HugeGothic-Bold; color : #c8c8c8; font-size: 14px; line-height: 24px; letter-spacing: 1px;margin-bottom: 10px;}
         .footer_content_right > p {font-family: Galaxie-book; color : #c8c8c8; font-size: 12px; line-height: 20px; text-align: right;}
 
-        .footer_content_right a {margin-right: 16px;}
+        .footer_content_right a {margin-right: 16px; }
         .footer_content_right a:last-child {margin-right : 0;}
         .footer_content_right a:nth-child {margin-right : 0;}
