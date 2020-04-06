@@ -2,9 +2,10 @@
 
 
 /* about.css 요소 */
-.hero {background-image: url(../img/about/IMG_3864.jpg);}
+.hero_about {background-image: url(../img/about/IMG_3864.jpg);}
 
 .hero_title {width: 74.68354vw; height: calc(80vh - 200px); display: flex; flex-direction: column; justify-content: flex-end; margin: auto;}
+
 
 /* about_us */
 
@@ -75,5 +76,4 @@ padding-top: 20px;margin-bottom: 25px; border-top: 1px solid rgba(255,255,255,0.
 .our_leadership_container {width: 74.68354%; margin: 0 auto; }
 
 .our_leadership_list {width:100%; display: flex; flex-wrap: wrap;}
-.our_leadership_list li{width: 23.5%;flex: 0 0 33.3%; margin-bottom: 40px; padding-top: 40px;
-border-bottom: 1px soild black;}
+.our_leadership_list li{width: 23.5%; flex: 0 0 33.3%; margin-bottom: 40px; padding-top: 40px; border-top: 1px solid rgba(0,0,0,0.3);}

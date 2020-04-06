@@ -41,3 +41,9 @@
 .work_05_right {width:43.04797%; display: flex; flex-direction: column; justify-content: center; margin-left:5.06329%;}
 .work_05_right h2 {color:white}
 .work_05_right p {color:white}
+
+.hero_title {width: 74.68354vw; height: calc(80vh - 200px); display: flex; flex-direction: column; justify-content: flex-end; margin: auto;}
+
+.hero_video {width: 100vw; height: 80vh; display: flex; justify-content: center; align-items: center; position: relative;}
+
+.hero_video video {min-width: 100vw; min-height: 80vh; vertical-align: bottom; border: none; right:0; bottom: 0; position: absolute;}
