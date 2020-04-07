@@ -1,0 +1,206 @@
+<!doctype html>
+<head>
+
+</head>
+<body>
+
+3월 9일 월요일
+
+시작 doc 입력
+
+1. 박스 모델
+2. 마진의 합 > 큰 값으로 수령
+3. width 와 height 는 content의 높이
+4. padding 값은 width height 포함되지 않는다
+5. css 네이밍 
+
+</body>
+
+inline box 는 line-height 로 조정
+좌의 padding margin 가능
+<img> 만은 상하 좌우 padding margin 값은 적용
+
+padding vs margin
+{ margin: 0 auto; } 가운데 정렬
+{ margin-left: auto;} 오른쪽 정렬
+{ margin-right: auto;} 왼쪽 정렬
+
+웹폰트를 사용하면 웹사이트에 접속할 때 자동으로 사용자에게 다운로드 됩니다.
+@font-face {
+    font-family:Futura;
+    src:url(font/Futura.woff)
+}
+
+padding 값을 주면 그만큼 넓이가 넓어짐
+<div> 블록 속성
+박스 디스플레이 속성이 뭔지
+
+static 위에서부터 요소에 따라오는것
+fixed 고정하고싶을때 위치를 정해줘야함 (기준 : 뷰 포트 기준에 따라)
+absolute 상위에 잇는 부모가 기준 (기준 : position: relative) relative 가장 가까운 위치에 배치됨
+calc 계산기 (50% - px) - 띄어쓰기 필수
+vw vh로 하면 스크롤 까지 포함해서 맞춰짐
+
+float 
+
+position 높이 normal flow < float < position < z-index
+
+display: flex; justify-content: center; 가로 정렬
+    (부모)          (가운데)
+                   align-items: center; 세로 정렬
+flex-direction: column 열바꿈
+
+3월 13일 금요일
+
+color:rgba (0,0,0,0) 투명도 설정 0 완전투명 0.5 반만투명 1 안투명
+
+border-radius :5px; 테두리가 5px 만큼 라운딩
+
+배경 이미지를 가로 및 세로로 반복
+background-image:url("위치");
+background-repeat:no-repeat;
+background-repeat:repeat-x;
+background-repeat:repeat-y;
+
+background-size:cover; 전체를 꽉 채워줌
+background-repeat:no-repeat;(습관처럼 쓰자)
+
+background-position : right top; 배경이미지를 위치시는데 사용함
+
+https://cssgradient.io/ 컬러표현사이트
+
+background : #컬러 위치 노중복 위치; 줄여서 쓸때는 순서를 맞춰야 함.
+
+overflow
+
+visible 오버플로우가 잘리지 않습니다 기본값 세팅
+hidden 오버플로우가 잘리고 나머지 내용은 보이지 않음
+scroll 오버플로우가 잘리고 스크롤 막대가 추가되어 나머지 내용을 볼 수 있습니다.
+auto scroll과 비슷하지만 필요할 때만 스크롤 막대를 추가함.
+
+베이스라인
+
+
+
+1440 75% 12.5% 12.5%
+
+3월 16일 
+
+display:flex 왼쪽으로 정렬
+
+box-sizing: border-box 고정
+
+word-wrap: black word 한글자씩 줄바꿈
+
+3월 17일
+
+measure 측정 확장프로그램
+ruler 측정 확장프로그램
+color zilla 색 추출 프로그램
+
+3월 18일
+
+CSS선택자
+CSS SELECTOR 
+요소의 이름을 기반으로 html 요소를 선택
+
+.footer div footer 안에 잇는 div 찾음
+.a:first-child 첫번째 요소 선택
+.a:last-child 마지막 요소 선택
+.a:nth-child(2) 두번째 요소 선택
+.a:nth-child(2) 마지막에서 두번째 요소 선택
+.a:nth-child(숫자) 선택요소 선택
+(even) 짝수들만
+(odd) 홀수들만
+.a:nth-child(n) 배수만 하고싶을때
+
+:nth-of-type(숫자) 
+
+자손의 선택 한칸 띄어서 옆에 자손 요소의 이름을 사용하여 자손 요소 선택
+
+.home_section hi {color:red;}
+.home_section_indec hr{border-top:1px solid white;}
+
+직계 자손
+
+.home_section > hi {color:red;}
+.home_section > indec.hr{border-top:1px solid white;}
+letter-spacing 거리 늘려줌
+
+3월 20일
+
+상태와 반응에 따라 선택
+
+a:link {color:black;} 링크 기본상태
+a:visited {color:blue;} 방문한 링크
+a:hover {color:black;} 마우스 오버할 때
+a:active {color:blue;} 클릭하는 순간
+
+gnb 글로벌 네이게이션 바
+
+03월23일
+
+   <script>
+        function logoClick() {
+            document.getElementById("home_header").style ="visibility:hidden;"
+
+        }
+    </script>
+ 사라지게
+
+3월 34일
+
+ min-width 레이아웃을 어느정도 정하려고할때
+
+ html5 지원
+ video - mp4, webm, ogg
+ audio - mp3, wav, ogg 
+ 
+ https://caniuse.com/
+
+ <video width="640px" height="480px" autoplay muted> 
+<source src="video/hugeinc_work.mp4" type="video/mp4">
+
+autoplay muted를 써야 자동 재생이됨
+loop 반복
+
+3월25일
+?autoplay=1 영상 자동재생
+&controls=0 컨트롤 바 없애기
+
+flex-wrap: wrap 줄바꿈
+
+웹스토어
+fatkun
+full screen capture
+
+텍스트 위계
+
+29 포인트 주제목
+18 포인트 부제목
+10 포인트 소제목
+10 포인트 본문 텍스트
+8 포인트 라벨
+7 포인트 각주
+
+
+
+1. H 170px, 170px, normal > h1
+
+2. H 80px, 84px, -2px > h2
+3. H 56px, 70px, -4px > h3
+3. G 56px, 70px, -4px > .h3_serif
+
+4. H 44px, 44px, normal > .h_h4
+5. H 24px, 30px, normal > .h_h5
+6. H 22px, 26px, (16px) normal > .h_h6
+
+7. G 18px, 34px, -0.27504 > p
+8. G 16px, normal, -1px > .p_small
+
+9. H 14px, 20px, normal > .p_sans
+10. G 12px, 22.6667px, -0.27504px > .p_small_2
+
+poster="img/Careers/HugeInc_Recruting.png 이미지 배경
+
+object-fit :cover
