@@ -4,17 +4,20 @@
 
     /* 메인화면 css */
             
-    .home_mark {font-family: HugeGothic-Bold; font-size: 36px; font-weight: 600px; width: 74px; height: 74px;; 
-        position: fixed; left : calc(50vw - 37px); top : 50px; display: flex; justify-content: center; align-items: center;z-index: 200;}
+    
     
     .home_mark div {width: 48px; height: 48px;text-align: center; line-height: 55px;}
     
-    .home_mark2 {font-family: HugeGothic-Bold; font-size: 300px; font-weight:600px; width:100vw; height: 100vh;; 
+    .home_mark2 {font-family: HugeGothic-Bold; font-size: 300px; font-weight:600px; width:100%; height: 100vh; 
         padding: 0; display: flex; justify-content: center; align-items: center; position: static; position: relative;}
     
-    .home_Hello {  margin: auto; display: flex; justify-content: center; align-items: center; }
-    
-    .home_bottom_bar {height:90px; width:100vw; border: none;  position: absolute; bottom: 0; display: flex; justify-content: center; align-items: center;
+
+    main {width:100%;}
+
+    .home_Hello {width:800px;font-size: 290px; line-height: 290px; text-align: center; margin: auto; padding-left: 50px;}
+    .home_Hello2 {margin: auto; display: flex; justify-content: center; align-items: center; display:none }
+
+    .home_bottom_bar {height:90px; width:100%; border: none;  position: absolute; bottom: 0; display: flex; justify-content: center; align-items: center;
         flex-direction: column}
     
     .home_bottom_line { height: 30px; border-left: 1px solid;}
@@ -32,32 +35,66 @@
 
     /* home_section css */
 
-    .home_section_wrap {width: 100vw; height: 100vh; box-sizing: border-box; display: flex;}
-    .home_section_index {width: calc(12.5vw + 5px); height: 100vh; padding-top: 20vh; box-sizing: border-box;}
+    .home_section_wrap {width: 100%; height: 100vh; box-sizing: border-box; display: flex;position: relative;}
+    .home_section_index {width: calc(12.5% + 5px); height: 100vh; padding-top: 10%; box-sizing: border-box;}
     
     .home_section_index_wrap {display:flex ; justify-content: flex-end;}
         .home_section_index_wrap p {font-family: HugeGothic-Bold; font-size: 22px; font-weight: 100; line-height: 22px; letter-spacing: 1px;}
-        .home_section_index_wrap div {border-bottom: 1px solid; width: 5vw; height: 11px; margin-left: 15px;}
-    
-    .home_section_content {width: 75vw;height: 100vh; padding: 20vh 0; box-sizing: border-box; padding-left: 15px;}
+        .home_section_index_wrap div {border-bottom: 1px solid; width: 50%; height: 11px; margin-left: 15px;}
+
+    .home_section_content {width: 75%;height: 100vh; padding: 10% 0; box-sizing: border-box; padding-left: 15px;}
     
     .home_section_content_wrap {width: 45%; height: 60vh;}
         .home_section_content_wrap div {font-family: HugeGothic-Bold; font-size:22px;font-weight:100; line-height:22px;letter-spacing: 1px;}
     
-    .home_section_content_subwrap {width:100%; height:calc(100% - 22px); display:flex; flex-direction:column; justify-content:center;}
-        .home_section_content_subwrap h2 {font-family: HugeGothic-Bold; font-size:80px;font-weight:100; line-height: 80px;}
-        .home_section_content_subwrap div {border-top: 1px solid; width: 5vw; margin: 5% 0;}
+    .home_section_content_subwrap {width:100%; height:calc(60vh - 22px); display:flex; flex-direction:column; justify-content:center;}
+        .home_section_content_subwrap h2 {font-family: HugeGothic-Bold;}
+        .home_section_content_subwrap div {border-top: 1px solid; width: 20%; margin: 5% 0;}
         .home_section_content_subwrap p {font-family:Galaxie-Book; font-size:18px;  line-height:28px; width:85%;}
     
 
     
     /* 배경 */
-    .bg_1 {background-image: url(../img/hugeinc.png)}
-    .bg_2 {background-image: url(../img/hugeinc9png.png)}
-    .bg_3 {background-image: url(../img/hugeinc10.png)}
-    .bg_4 {background-image: url(../img/hugeinc12.png)}
-    .bg_5 {background-image: url(../img/hugeinc2.jpg)}
-    .bg_6 {background-image: url(../img/hugeinc3.jpg)}
-    .bg_7 {background-image: url(../img/hugeinc1.jpg)}
+    .bg_1 {background-image: url(../img/hugeinc.png); background-size: cover; background-position: center;}
+    .bg_2 {background-image: url(../img/hugeinc9png.png); background-size: cover; background-position: center;}
+    .bg_3 {background-image: url(../img/hugeinc10.png); background-size: cover; background-position: center;}
+    .bg_4 {background-image: url(../img/hugeinc12.png); background-size: cover; background-position: center;}
+    .bg_5 {background-image: url(../img/hugeinc2.jpg); background-size: cover; background-position: center;}
+    .bg_6 {background-image: url(../img/hugeinc3.jpg); background-size: cover; background-position: center;}
+    .bg_7 {background-image: url(../img/hugeinc1.jpg); background-size: cover; background-position: center;}
+    
 
+
+    @media screen and (max-width: 1000px)
+
+    {
+        h2 {font-size: 80px; line-height: 80px;}
+        .home_section_index {width:180px;}
+        .home_section_index_wrap div {width:30%;}
+    }
+    @media screen and (max-width: 768px)
+    {
+        
+    h1 {font-size: 200px;}
+
+    .home_hello {display: none;}
+    .home_Hello2 {display: block; font-size: 200px;}
+    .home_section_content_wrap {width:100%;}
+    .home_section_content_subwrap h2 {font-size: 40px;}
+    .home_section_content_subwrap div {width:20%; margin:1% 0;}
+    .home_section_wrap {flex-direction: column;}
+    .home_section_content_wrap div:first-child {margin-left: 22%;margin-top: 23px;width: 100%; font-size: 14px;}
+    .home_section_content {padding-left: 10%; position: absolute; padding-top:40%;}
+    .home_section_index_wrap {padding-left:10%; position: absolute;width:28%; padding-top:calc(40% - 10%);margin-top: 23px;}
+    .home_section_index_wrap div {width:100%;margin-left:5px;}
+    .home_section_index_wrap p {font-size:14px;}
+    .home_section_content {width:100%;}
+    .home_section_content_subwrap {height:auto;}
+
+    .margin-left {margin-left: 0;}
+    
+    .bg_3 {background-image: url(../img/hugeinc100.png); background-size: cover; background-position: center;}
+    .bg_5 {background-image: url(../img/hugeinc22.jpg); background-size: cover; background-position: center;}
+
+    }
 

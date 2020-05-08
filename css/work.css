@@ -2,9 +2,15 @@
 
 .work_03 {width:100vw;background-color: black; padding-bottom : 95px; box-sizing: border-box;}
 .work_03_ul {width: 90vw; margin: 0 auto; display: flex; flex-wrap: wrap;}
-.work_03_ul li { width: 30vw; height: 30vw; background-size: cover; display: flex; flex-direction: column; justify-content: flex-end; padding : 0 0 28px 40px; font-size: 44px; font-family: HugeGothic-Bold; color: white;}
+.work_03_ul li{ width: 29.9vw; height: 29.9vw; background-size: cover;  font-size: 44px; font-family: HugeGothic-Bold; color: white; }
+.work_03_ul a {width: 29.9vw; height: 29.9vw; box-sizing: border-box; display: block;
+overflow: hidden; padding-top:calc(29.9vw - 64px); padding-left:40px ;color:white; transition: background-color 1s, padding-top 1s;}
+.work_03_ul li h5 {margin-top:20px;}
+.work_03_ul a:hover{background-color: rgba(0,0,0,0.5); padding-top:calc(29.9vw - 124px);}
 
-.work_03_ul li:nth-child(1){background-image:url(../img/Thumbnail2.jpg);}
+
+
+.work_03_ul li:nth-child(1){background-image: url(../img/Thumbnail2.jpg);}
 .work_03_ul li:nth-child(2){background-image: url(../img/android-work-tile.jpg)}
 .work_03_ul li:nth-child(3){background-image: url(../img/AMC_workTile__1_.jpg)}
 .work_03_ul li:nth-child(4){background-image: url(../img/tile-goose__1_.jpg)}
@@ -21,6 +27,10 @@
 .work_03_ul li:nth-child(15){background-image: url(../img/randstad_casestudythumbnail-2__1_.png)}
 .work_03_ul li:nth-child(16){background-image: url(../img/Telus_work_thumbnail__1_.jpg)}
 .work_03_ul li:nth-child(17){background-image: url(../img/Zelle_workTile.jpg)}
+
+
+
+
 
 .work_04{background-color: #111111; width: 100%;}
 .work_04_wrap{width: 74.68354%; display: flex; justify-content: space-between; box-sizing: border-box; margin: auto; padding: 144px 0;}
