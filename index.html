@@ -15,43 +15,60 @@
 <!-- javascript -->
 <script>
 
-    var header_state = 0; /* 로고 클릭 상태*/
+var header_state = 0; /* 로고 클릭 상태*/
 
-        function logoClick() {
-            if (header_state == 0 ) {
-                document.getElementById("home_header").style ="visibility:visible;";
-                header_state = 1; } /* 해더 보이기 */
-            else {document.getElementById("home_header").style ="visibility:hidden;";
-                header_state = 0; } /* 해더 안보이기 */
+function logoClick() {
+if (document.body.clientWidth > 767)
+    {
+        if (header_state == 0 ) {
+            document.getElementById("home_header").style="animation-name:header_animation_on; animation-duration:0.5s; animation-fill-mode:forwards;";
+            
+            document.getElementById("main").style = "padding-top:600px";
+            document.getElementById("logo").style.display ="none";
+            document.getElementById("logo_open").style.display ="flex";
+            header_state = 1; } /* 해더 보이기 */
+        else {
 
-        }
+            document.getElementById("home_header").style="animation-name:header_animation_on; animation-duration:0.5s;";
+            document.getElementById("main").style = "padding-top:0px";
+            document.getElementById("logo_open").style.display ="none";
+            document.getElementById("logo").style.display ="flex";
+            header_state = 0; } /* 해더 보이기 */
+        
+    }
+
+        else { if (header_state == 0 ) {
+            document.getElementById("home_header").style.height="80vh";
+            document.getElementById("main").style="padding-top:440px;"
+            document.getElementById("logo").style.display ="none";
+            document.getElementById("logo_open").style.display ="flex";
+            header_state = 1;}
+            
+
+        else {
+
+            document.getElementById("home_header").style.height="0px";
+            document.getElementById("main").style="padding-top:0px";
+            document.getElementById("logo_open").style.display ="none";
+            document.getElementById("logo").style.display ="flex";
+            header_state = 0;}
+        }}
+            
+
 </script>
 
 </head>
 
 <body>
 <!--메인화면 시작-->
-    <div>
-        <div class="home_section_wrap" style="position: relative;">
-            <div class="home_mark bg_white">
-            <div class="ea178c"> H</div>
-        </div>
-            <div class="home_mark2 bg_white">
-            <div class="home_Hello bg_white">Hello.</h1></div>
-            <div class="home_bottom_bar bg_white">
-            <p style="line-height: 60px;">Today at Huge.</p>
-            <div class="home_bottom_line black"></div>
-        </div>
-        </div>
-    </div>
-       
-
-    </div>
+   
 <!--메인화면 끝-->
 
-
+<div>
     <div id="logo" onclick="logoClick()">H</div>
-
+    <div id="logo_open" onclick="logoClick()">HUGE</div>
+</div>
+    
 <!-- 로고 시작-->
     <header id="home_header">
     
@@ -60,28 +77,42 @@
             <ul class="menu_wrap">
                 <li>
                     <a href="index.html">Hello.</a>
+                    <hr>
                     <p>Today at Huge.</p>
                     <div></div>
+
                 </li>
                 <li>
                     <a href="index_work.html">Work.</a>
+                    <hr>
                     <p>What we've made.</p>
                     <div></div>
+
                 </li>
                 <li>
+
                     <a href="index_about.html">About.</a>
+                    <hr>
                     <p>Who we are</p>
                     <div></div>
+
+
                 </li>
                 <li>
+
                     <a href="index_careers.html">Carrers.</a>
+                    <hr>
                     <p>Join the team.</p>
                     <div></div>
+
+
                 </li>
                 <li>
                     <a href="index_contact.html">Contact.</a>
+                    <hr>
                     <p>Get in touch.</p>
                     <div></div>
+
                 </li>
                 
             </ul>
@@ -95,19 +126,38 @@
     </header>
  <!-- 로고 끝 -->
 
-   
+ <main id="main">
+
+    <div>
+        <div class="home_section_wrap">
+            
+            <div class="home_Hello"><h1>Hello.</h1></div>
+            <div class="home_Hello2 bg_white"><h1>Hi.</h1></div>
+            <div class="home_bottom_bar">
+            <p style="line-height: 60px;">Today at Huge.</p>
+            <div class="home_bottom_line black"></div>
+        
+        </div>
+    </div>
+       
+
+    </div>
+
+
+
 <!-- 1페이지 섹션 시작--> 
     <section id="home_section01"> <!--home 첫번째 섹션 시작-->
         <div class="home_section_wrap bg_1 "> <!--home 첫번째 섹션 wrap 시작-->
             <div class="home_section_index"> <!--home 첫번째 섹션 index 시작-->
                 <div class="home_section_index_wrap">
-                    <p class="white">01 </p>
-                    <div class="white"></div>
+                    <p class="white">01. </p>
+                    <div class="margin-left white"></div>
             </div>
             </div>  <!--home 첫번째 섹션 끝-->
 
         <div class="home_section_content">  <!--home 첫번째 섹션 content 시작-->
             <div class="home_section_content_wrap">
+
                 <div class="white">win.</div>
 
                 <div class="home_section_content_subwrap">
@@ -132,7 +182,7 @@
         <div class="home_section_wrap bg_2"> <!--home 두번째 섹션 wrap 시작-->
             <div class="home_section_index"> <!--home 두번째 섹션 index 시작-->
                 <div class="home_section_index_wrap">
-                    <p class="white" >02 </p>
+                    <p class="white" >02. </p>
                     <div class="white"></div>
             </div>
             </div>  <!--home 두번째 섹션 끝-->
@@ -164,7 +214,7 @@
     <div class="home_section_wrap bg_3"> <!--home 세번째 섹션 wrap 시작-->
         <div class="home_section_index"> <!--home 세번째 섹션 index 시작-->
             <div class="home_section_index_wrap">
-                <p class="black" >03 </p>
+                <p class="black">03. </p>
                 <div class="black"></div>
         </div>
         </div>  <!--home 세번째 섹션 끝-->
@@ -195,7 +245,7 @@
         <div class="home_section_wrap bg_4"> <!--home 네번째 섹션 wrap 시작-->
             <div class="home_section_index"> <!--home 네번째 섹션 index 시작-->
                 <div class="home_section_index_wrap">
-                    <p class="white" >04 </p>
+                    <p class="white" >04. </p>
                     <div class="white"></div>
             </div>
             </div>  <!--home 네번째 섹션 끝-->
@@ -226,7 +276,7 @@
         <div class="home_section_wrap bg_5"> <!--home 다섯번째 섹션 wrap 시작-->
             <div class="home_section_index"> <!--home 다섯번째 섹션 index 시작-->
                 <div class="home_section_index_wrap">
-                    <p class="black" >05 </p>
+                    <p class="black" >05. </p>
                     <div class="black"></div>
             </div>
             </div>  <!--home 다섯번째 섹션 끝-->
@@ -257,7 +307,7 @@
         <div class="home_section_wrap bg_6"> <!--home 여섯번째 섹션 wrap 시작-->
             <div class="home_section_index"> <!--home 여섯번째 섹션 index 시작-->
                 <div class="home_section_index_wrap">
-                    <p class="white" >06 </p>
+                    <p class="white" >06. </p>
                     <div class="white"></div>
             </div>
             </div>  <!--home 여섯번째 섹션 끝-->
@@ -287,7 +337,7 @@
             <div class="home_section_wrap bg_7"> <!--home 일곱번째 섹션 wrap 시작-->
                 <div class="home_section_index"> <!--home 일곱번째 섹션 index 시작-->
                     <div class="home_section_index_wrap">
-                        <p class="black" >07 </p>
+                        <p class="black" >07. </p>
                         <div class="black"></div>
                 </div>
                 </div>  <!--home 일곱번째 섹션 끝-->
@@ -337,7 +387,7 @@
             </footer>
 <!-- footer 끝 -->
     
-
+</main>
 
 </body>
 </html>
