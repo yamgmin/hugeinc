@@ -1,0 +1,211 @@
+@font-face {
+    font-family:Galaxie-Book;
+    src: url(../font/GalaxieCopernicus-Book.woff); 
+            }
+@font-face {
+    font-family:HugeGothic-Bold;
+    src: url(../font/HugeGothic-Bold.woff);
+            }
+    /* 처음
+    
+    h1 {font-family: HugeGothic-Bold;font-size: 300px; color: black; font-weight: 600; }
+    p {font-family: Galaxie-Book;font-size: 14px; color: black; font-weight: 100; -webkit-font-smoothing: antialiased;}
+    h2 {font-size: 80px; font-weight: 600; line-height: 100px;-webkit-font-smoothing: antialiased;}
+    
+    .h2_home {font-family: HugeGothic-Bold; font-size: 80px; line-height: 84px; letter-spacing: -2px; font-weight: 400; -webkit-font-smoothing: antialiased;}
+    .h3_work {font-family: HugeGothic-Bold; font-size: 80px; font-weight: 400; letter-spacing: -2px; line-height: 84px; -webkit-font-smoothing: antialiased;}
+
+    .h2_work_icon {font-family: HugeGothic-Bold; font-size: 44px; line-height: 44px; font-weight: 400; -webkit-font-smoothing: antialiased;}
+
+    .h5_home {font-family: HugeGothic-Bold; font-size: 22px; line-height: 15.9999px; font-weight: 400; font-family: HugeGothic-Bold;-webkit-font-smoothing: antialiased;}
+
+    .h6_footer_menu {font-family: HugeGothic-Bold; font-size: 14px; line-height: 20px; font-weight: 400;-webkit-font-smoothing: antialiased;}
+    
+    .div_work {font-family:Galaxie-Book; font-size: 56px; font-weight: 400; line-height: 70px; letter-spacing: -4px; -webkit-font-smoothing: antialiased;}
+
+    .div_work_section {font-family: HugeGothic-Bold; font-size: 22px; line-height: 15.9999px; font-weight: 400; -webkit-font-smoothing: antialiased;}
+
+    .p_home {font-family: Galaxie-Book; font-size: 18px; line-height: 34px; font-weight:400; color: white; letter-spacing: 0.27504px;-webkit-font-smoothing: antialiased;}
+    
+    .p_caption {font-family: Galaxie-Book; font-size:12px; font-weight: 400; line-height: 22.6667px; letter-spacing: 0.27504px; color: white;-webkit-font-smoothing: antialiased;}
+
+    .h1_about {font-family: HugeGothic-Bold; font-size: 170px; font-weight: 400; line-height: 169px; -webkit-font-smoothing: antialiased;}
+
+    .h2_about {font-family:Galaxie-Book; font-size: 56px; font-weight: 400; line-height: 70px; letter-spacing: -4px; -webkit-font-smoothing: antialiased;}
+    
+    .h2_about_mid {font-family: HugeGothic-Bold;font-size: 44px; font-weight: 400; line-height: 45.9998px;-webkit-font-smoothing: antialiased;}
+
+    .h3_about {font-family: HugeGothic-Bold; font-size: 24px; font-weight: 400; line-height: 30px; -webkit-font-smoothing: antialiased;}
+    */
+
+    h1, h2, h3 ,h4 ,h5 , h6 {font-family: HugeGothic-Bold; font-weight: 400; -webkit-font-smoothing: antialiased;word-break: keep-all;}
+    
+    p {font-family: Galaxie-Book; -webkit-font-smoothing: antialiased;}
+    
+    h1 {font-size: 300px; line-height: 300px;letter-spacing: -4px;}
+    h2 {font-size: 80px; line-height: 80px; letter-spacing: -2px;}
+    h3 {font-size: 56px; line-height: 70px; letter-spacing: -4px;}
+    h4 {font-size: 44px; line-height: 44px;letter-spacing: -4px;}
+    h5 {font-size: 24px; line-height: 30px;letter-spacing: -4px;}
+    h6 {font-size: 22px; line-height: 26px;letter-spacing: -4px;}
+    
+    p {font-size: 18px; line-height: 34px; letter-spacing: -0.27504;}
+
+    .h3_serif {font-family: Galaxie-Book; font-size: 56px; line-height: 70px; letter-spacing: -4px;}
+    
+    .h4 {font-size: 44px; line-height: 44px;}
+
+    .h5 {font-size: 24px; line-height: 30px;}
+
+    .h6 {font-size: 22px; line-height: 26px;}
+
+    .p_small {font-size: 16px; letter-spacing: -1px;}
+    .p_small_2 {font-size: 12px; line-height: 22.6667px; letter-spacing: -0.27504px;}
+    
+    .p_sans {font-size: 14px; line-height: 20px;}
+
+    
+            
+    .width_100vw {width: 100%;}
+    .margin_auto {margin: auto;}
+    .text_align_center {text-align: center;}
+    .margin_top_72{margin-top: 72px;}
+    .margin_top_108{margin-top: 108px;}
+    .margin_top_144{margin-top: 144px;}
+    .margin_top_180{margin-top: 180px;}
+
+    /* 색 */
+
+    .white {color:white}
+    .black {color:black}
+    .ea178c {color: #ea178c;}
+    .c8c8c8 {color:#c8c8c8;}
+
+    /* 배경 색 */
+
+    .bg_white {background-color: white;}
+    .bg_black {background-color: black;}
+
+     /* logo css */
+     
+     @keyframes header_animation_on {
+         from {height: 0px;}
+         to {height: 440px;}
+     }
+     @keyframes header_animation_off {
+        from {height: 440px;}
+        to {height: 0px;}
+    }
+
+    @keyframes header_aimation_m_on 
+    {
+        from {height: 0px;}
+        to {height:80vh;}
+    }
+
+    @keyframes header_aimation_m_off {  
+        from {height: 80vh;}
+        to {height:0px;}
+    }
+
+
+    header {width:100%; height: 0px; position: fixed;  background-color : #f4f4f4; display: block; overflow: hidden; z-index: 100;}
+     
+     nav {width: 100%; height: 480px; display : flex; justify-content: center; align-items: center; box-sizing : border-box; position: relative;}
+ 
+     #logo {width:74px; height: 74px; font-family: HugeGothic-Bold;display: flex; justify-content: center; align-items: center; font-size: 32px; color: #ea178c; background-color: white; position: fixed; top:50px; left : calc(50% - 37px); z-index: 200; padding-top:2px; box-sizing: border-box;background: linear-gradient(315deg, #ffffff, #ea178c,#ffffff,  #ea178c,#ffffff, #ffffff);
+        background-size: 1800% 1800%;
+        
+        animation: AnimationName 0.6s;animation-iteration-count : 1;}
+        
+        @keyframes AnimationName {
+            0%{background-position:0% 4%}
+            
+            100%{background-position:100% 100%}
+        }
+    #logo_open {width:74px; height:74px; font-family: HugeGothic-Bold;display: flex; justify-content: center; align-items: center; font-size: 32px;line-height: 32px; color: #ea178c;   position: fixed; top:50px; left : calc(50% - 37px); z-index: 200; padding-top:2px; box-sizing: border-box; display: none; background-color: none;
+    }
+        
+       
+ 
+     .menu_wrap {width:1050px; height : 90px; display: flex; justify-content: space-between;}
+        .menu_wrap li {width: 15%; height: 90px; display: flex; flex-direction: column;align-items: center;}
+             .menu_wrap li a {font-family: HugeGothic-Bold; font-size:36px; color: black; line-height: 36px;}
+         .menu_wrap li a:hover {color: #ea178c; cursor: pointer;}
+             .menu_wrap li p {font-family: Galaxie-Book; font-size: 14px;  letter-spacing: -1px; line-height: 28px;}
+             .menu_wrap li div {border-bottom: 1px solid black; width: 48px; height: 36px;}
+             .menu_wrap li hr {background-color: #000;
+                border: none;
+                border-color: transparent;
+                border-image: none;
+                -ms-flex-positive: 2;
+                flex-grow: 2;
+                height: 1px;
+                margin: 13px 10px;}
+ 
+     .gnb_aside {width:320px; height: 22px; position: absolute; top:350px; left : calc (50 - 160px); display: flex; justify-content: center; }
+         .gnb_aside p {font-family: Galaxie-Book; font-size: 14px; letter-spacing: -1px; line-height: 22px;}
+         .gnb_aside a {font-family: HugeGothic-Bold; font-size: 16px; line-height: 21px;margin-left: 6px; padding-top: 1px;}
+             .gnb_aside a:hover {color: #ea178c; cursor: pointer;}
+             .gnb_aside a span {color:#ea178c}
+ 
+     #home_02 {background-image: url(img/hugeinc9png.png); background-size: cover;}
+     #home_02 > h1 {color: white; font-size: 120px;}
+
+    /* footer css */
+
+    .home_footer {width: 100%; height: auto; padding:70px 0 80px; box-sizing: border-box;}
+
+    .foot_content_wrap {}
+
+        .home_footer > div {width: 100%; height: 90px;  padding : 0 calc(12.5% + 15px); display: flex; justify-content: space-between; }
+
+    .footer_content_left {display: flex; align-items: center;}
+        .footer_content_left>div {font-family: HugeGothic-Bold; font-size: 36px; line-height: 36px; border-right: 1px solid  #8888; padding-right: 32px; margin-right: 32px; letter-spacing: 1px;}
+        .footer_content_left>p {font-family: HugeGothic-bold; font-size: 18px; line-height: 36px; letter-spacing: 1px; }
+
+    .footer_content_right {display:flex;flex-direction: column; }
+        .footer_content_right > div {font-family: HugeGothic-Bold; color : #c8c8c8; font-size: 14px; line-height: 24px; letter-spacing: 1px;margin-bottom: 10px;}
+        .footer_content_right > p {font-family: Galaxie-book; color : #c8c8c8; font-size: 12px; line-height: 20px; text-align: right;}
+
+        .footer_content_right a {margin-right: 16px; }
+        .footer_content_right a:last-child {margin-right : 0;}
+        .footer_content_right a:nth-child {margin-right : 0;}
+
+        @media screen and (max-width: 999px)
+    {
+        
+        .footer_content_wrap {flex-direction: column;}
+        .footer_content_left>p {font-size: 24px;  }
+        .footer_content_left > div {padding-right:18px; margin-right: 18px;}
+        .footer_content_right > p {text-align: left; padding-top: 10px;}
+        .home_footer { height:auto; padding:5% 0 5% 10%;}
+        .home_footer >div {padding:0; height:18%}
+        
+        h2 {font-size: 72px;}
+    }
+
+    @media screen and (max-width: 767px)
+    {
+
+        nav {width:100%; height:100%;}
+
+        #logo {width:60px; height:60px; left : calc(50% - 30px);}
+        .gnb {flex-direction: column;}
+        .gnb_aside {position: unset;}
+        .menu_wrap {width:100%; height:100%; display: flex; flex-direction: column;padding-top: 200px; margin:0 auto;}
+        .menu_wrap li {display: flex; justify-content: space-between; width:80%; margin: 0 auto; flex-direction: unset;}
+        .menu_wrap li a {font-size: 20px;}
+        .menu_wrap li div {display: none;}
+
+        .gnb_aside {margin-bottom:50%;}
+     
+
+
+
+        .menu_wrap li div {width:50%;}
+
+        .footer_content_left>p {font-size: 14px;}
+        .footer_content_left > div {padding-right:18px; margin-right: 18px;}
+        .footer_content_right > div {margin-top : 20px;}
+    }
