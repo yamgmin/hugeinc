@@ -80,8 +80,8 @@
     .home_hello {display: none;}
     .home_Hello2 {display: block; font-size: 200px;}
     .home_section_content_wrap {width:80%;}
-    .home_section_content_subwrap h2 {font-size: 40px;}
-    .home_section_content_subwrap div {width:20%; margin:1% 0;}
+    .home_section_content_subwrap h2 {font-size: 40px;line-height: 40px;margin-top:5%;}
+    .home_section_content_subwrap div {width:20%; margin:5% 0;}
     .home_section_wrap {flex-direction: column;}
     .home_section_content_wrap div:first-child {margin-left: 22%;margin-top: 23px;width: 100%; font-size: 14px;}
     .home_section_content {padding-left: 10%; position: absolute; padding-top:30%;}
