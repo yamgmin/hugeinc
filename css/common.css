@@ -212,7 +212,7 @@
         .footer_content_right > div {margin : 20px 0;}
         
     }
-    @media screen and (max-width: 350px)
+    @media screen and (max-width: 360px)
     {
         .footer_content_left>div {font-size:20px;}
         .footer_content_left > div {padding-right:10px; margin-right: 10px;}
