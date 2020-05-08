@@ -70,7 +70,7 @@
     {
         h2 {font-size: 80px; line-height: 80px;}
         .home_section_index {width:15%;}
-        .home_section_index_wrap div {width:30%;}
+        .home_section_index_wrap div {width:45%;}
     }
     @media screen and (max-width: 767px) 
     {
@@ -79,14 +79,14 @@
 
     .home_hello {display: none;}
     .home_Hello2 {display: block; font-size: 200px;}
-    .home_section_content_wrap {width:100%;}
+    .home_section_content_wrap {width:80%;}
     .home_section_content_subwrap h2 {font-size: 40px;}
     .home_section_content_subwrap div {width:20%; margin:1% 0;}
     .home_section_wrap {flex-direction: column;}
     .home_section_content_wrap div:first-child {margin-left: 22%;margin-top: 23px;width: 100%; font-size: 14px;}
-    .home_section_content {padding-left: 10%; position: absolute; padding-top:40%;}
-    .home_section_index_wrap {padding-left:10%; position: absolute;width:28%; padding-top:calc(40% - 10%);margin-top: 23px;}
-    .home_section_index_wrap div {width:100%;margin-left:5px;}
+    .home_section_content {padding-left: 10%; position: absolute; padding-top:30%;}
+    .home_section_index_wrap {padding-left:10%; position: absolute;width:25%; padding-top:calc(30% - 10%);margin-top: 23px;}
+    .home_section_index_wrap div {width:100%;margin-left:5%;}
     .home_section_index_wrap p {font-size:14px;}
     .home_section_content {width:100%;}
     .home_section_content_subwrap {height:auto;}
