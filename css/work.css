@@ -84,6 +84,8 @@ overflow: hidden; padding-top:calc(29.9vw - 64px); padding-left:40px ;color:whit
 }
 @media screen and (max-width: 767px )
 {
+    .play {width:60px;height:60px;}
+
     h3 { width:60%; font-size:30px; line-height: 30px; text-align: center;}
     
     
