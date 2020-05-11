@@ -1,0 +1,76 @@
+.play {width:74px; height:74px; background-color: rgba(234, 23, 140, 0.6); color: white; position: absolute; display: flex; justify-content: center; align-items: center;}
+
+.work_02 {width: 100%; height: 210px; background-color:black; color: white; font-size: 56px;display: flex; justify-content: center; align-items: center; font-family: Galaxie-Book; }
+
+.work_03 {width:100%;background-color: black; padding-bottom : 95px; box-sizing: border-box;}
+.work_03_ul {width: 90vw; margin: 0 auto; display: flex; flex-wrap: wrap;}
+.work_03_ul li{ width: 29.9vw; height: 29.9vw; background-size: cover;  font-size: 44px; font-family: HugeGothic-Bold; color: white; }
+.work_03_ul a {width: 29.9vw; height: 29.9vw; box-sizing: border-box; display: block;
+overflow: hidden; padding-top:calc(29.9vw - 64px); padding-left:40px ;color:white; transition: background-color 0.5s, padding-top 0.5s;}
+.work_03_ul li h5 {margin-top:20px;}
+.work_03_ul a:hover{background-color: rgba(0,0,0,0.5); padding-top:calc(29.9vw - 124px);}
+
+
+
+.work_03_ul li:nth-child(1){background-image: url(../img/Thumbnail2.jpg);}
+.work_03_ul li:nth-child(2){background-image: url(../img/android-work-tile.jpg)}
+.work_03_ul li:nth-child(3){background-image: url(../img/AMC_workTile__1_.jpg)}
+.work_03_ul li:nth-child(4){background-image: url(../img/tile-goose__1_.jpg)}
+.work_03_ul li:nth-child(5){background-image: url(../img/Google_Tile.jpg)}
+.work_03_ul li:nth-child(6){background-image: url(../img/Work_Thumbnails_Gucci__1_.jpg)}
+.work_03_ul li:nth-child(7){background-image: url(../img/HULU__1___1__2__1_.jpg)}
+.work_03_ul li:nth-child(8){background-image: url(../img/Hero-background-1__11___1_.jpg)}
+.work_03_ul li:nth-child(9){background-image: url(../img/LG_900Tile__1___2_.jpg)}
+.work_03_ul li:nth-child(10){background-image: url(../img/Lenovo_WorkTile.jpg)}
+.work_03_ul li:nth-child(11){background-image: url(../img/tile-today.jpg)}
+.work_03_ul li:nth-child(12){background-image: url(../img/Nike_work_thumbnail1__1_.jpg)}
+.work_03_ul li:nth-child(13){background-image: url(../img/Pfizer_tile__1_.jpg)}
+.work_03_ul li:nth-child(14){background-image: url(../img/SK-II__1_.jpg)}
+.work_03_ul li:nth-child(15){background-image: url(../img/randstad_casestudythumbnail-2__1_.png)}
+.work_03_ul li:nth-child(16){background-image: url(../img/Telus_work_thumbnail__1_.jpg)}
+.work_03_ul li:nth-child(17){background-image: url(../img/Zelle_workTile.jpg)}
+
+
+
+
+
+.work_04{background-color: #111111; width: 100%;}
+.work_04_wrap{width: 74.68354%; display: flex; justify-content: space-between; box-sizing: border-box; margin: auto; padding: 144px 0;}
+.work_04_left {width: 32.20339%}
+    .work_04_left hr {width:47.36842%; height:1px; border-top: 1px solid white;}
+    .work_04_left h4 {font-family: HugeGothic-Bold; font-size: 22px; color: white; line-height: 60px;}
+
+.work_04_right {display :flex; justify-content:flex-start; width: 66.10169%; flex-wrap: wrap; align-items: center; align-content: flex-start;}
+    .work_04_right li {width: 15.3846%; margin-right: 10.25641%; margin-bottom: 50px;}
+    .work_04_right li:nth-child(4n) {margin-right: 0;}
+    .work_04_right li img {width: 100%;}
+
+.work_05 {width:100%;  background-image:url(../img/9.jpg); background-size: cover;}
+.work_05 > div:first-child {background-color: rgba(0,0,0,0.7); padding: 200px 0;}
+.work_05_wrap {width: 100%; display: flex; justify-content: flex-start;}
+
+.work_05_left {width: 18.98734%; padding-bottom: 18.98734%;  background-image : url(../img/magenta-hero.gif); background-size:cover;  margin-right: 1.25%;margin-left: 12.65823%;}
+.work_05_right {width:43.04797%; display: flex; flex-direction: column; justify-content: center; margin-left:5.06329%;}
+.work_05_right h2 {color:white}
+.work_05_right p {color:white}
+
+.hero_title {width: 74.68354%; height: calc(80vh - 200px); display: flex; flex-direction: column; justify-content: flex-end; margin: auto;}
+
+.hero_video {width: 100%; height: 80vh; display: flex; justify-content: center; align-items: center; position: relative; }
+
+.hero_video video {min-width: 100%; min-height: 80vh; vertical-align: bottom; border: none; right:0; bottom: 0; position: absolute;}
+
+@media screen and (max-width : 999px)
+{
+    .work_02 {font-size: 42px; line-height: 42px;}
+
+    .work_03_ul {width:86vw;}
+    .work_03_ul li {width:43vw; height: 43vw;}
+    .work_03_ul a {width:43vw; height:43vw; padding-top:calc(43vw - 64px);}
+    .work_03_ul a:hover{padding-top:calc(43vw - 124px);}
+
+    .work_04_wrap {width:83.05085%;; flex-direction: column;}
+    .work_04_right {width:100%;}
+    .work_04_right li {width:33.3333%; margin: 0 0 50px;}
+
+}
