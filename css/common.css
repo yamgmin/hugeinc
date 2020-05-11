@@ -97,13 +97,13 @@
         to {height: 0px;}
     }
 
-    @keyframes header_aimation_m_on 
+     @keyframes header_animation_m_on 
     {
         from {height: 0px;}
         to {height:80vh;}
     }
 
-    @keyframes header_aimation_m_off {  
+     @keyframes header_animation_m_off {  
         from {height: 80vh;}
         to {height:0px;}
     }
@@ -179,7 +179,7 @@
         .footer_content_left>p {font-size: 24px;  }
         .footer_content_left > div {padding-right:18px; margin-right: 18px;}
         .footer_content_right > p {text-align: left; padding-top: 10px;}
-        .home_footer { height:auto; padding:5% 0 5% 10%;}
+        .home_footer { height:auto; padding:5% 0 5% 15%;}
         .home_footer >div {padding:0; height:auto;}
         
         h2 {font-size: 72px;}
@@ -205,7 +205,7 @@
 
         .menu_wrap li div {width:50%;}
 
-
+        .home_footer { height:auto; padding:5% 0 5% 10%;}
 
         .footer_content_left>p {font-size: 14px;}
         .footer_content_left > div {padding-right:18px; margin-right: 18px;}
