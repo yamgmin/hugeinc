@@ -74,6 +74,7 @@ overflow: hidden; padding-top:calc(29.9vw - 64px); padding-left:40px ;color:whit
     .work_03_ul a:hover{padding-top:calc(43vw - 124px);}
 
     .work_04_wrap {width:83.05085%;; flex-direction: column;}
+    .work_04_left {width: 48.97959%;}
     .work_04_right {width:100%;}
     .work_04_right li {width:33.3333%; margin: 0 0 50px;}
     
@@ -93,9 +94,11 @@ overflow: hidden; padding-top:calc(29.9vw - 64px); padding-left:40px ;color:whit
     .work_03_ul a {width:86vw; height:86vw; padding-top:calc(86vw - 64px);}
     .work_03_ul a:hover{padding-top:calc(86vw - 124px);}
 
+    .work_04_left {width: 82.75862%;}
+ 
     .work_04_wrap {width: 74.35897%;}
     .work_04_left {margin: 0 0 50px;}
-    .work_04_left h4 {font-size: 14px; line-height: 14px;}
+    .work_04_left h4 {font-size: 14px; line-height: 14px; margin-top:14px;}
 
     h2 {font-size : 36px; line-height: 36px;}
     h4 {font-size: 30px;}
