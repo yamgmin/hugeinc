@@ -97,13 +97,13 @@
         to {height: 0px;}
     }
 
-    @keyframes header_aimation_m_on 
+     @keyframes header_animation_m_on 
     {
         from {height: 0px;}
         to {height:80vh;}
     }
 
-    @keyframes header_aimation_m_off {  
+     @keyframes header_animation_m_off {  
         from {height: 80vh;}
         to {height:0px;}
     }
@@ -132,7 +132,7 @@
         .menu_wrap li {width: 15%; height: 90px; display: flex; flex-direction: column;align-items: center;}
              .menu_wrap li a {font-family: HugeGothic-Bold; font-size:36px; color: black; line-height: 36px;}
          .menu_wrap li a:hover {color: #ea178c; cursor: pointer;}
-             .menu_wrap li p {font-family: Galaxie-Book; font-size: 14px;  letter-spacing: -1px; line-height: 28px;}
+             .menu_wrap li p {font-family: Galaxie-Book; font-size: 14px;  letter-spacing: -1px; line-height: 28px;white-space: nowrap;}
              .menu_wrap li div {border-bottom: 1px solid black; width: 48px; height: 36px;}
              .menu_wrap li hr {background-color: #000;
                 border: none;
@@ -180,7 +180,7 @@
         .footer_content_left > div {padding-right:18px; margin-right: 18px;}
         .footer_content_right > p {text-align: left; padding-top: 10px;}
         .home_footer { height:auto; padding:5% 0 5% 10%;}
-        .home_footer >div {padding:0; height:18%}
+        .home_footer >div {padding:0; height:auto;}
         
         h2 {font-size: 72px;}
     }
@@ -199,13 +199,22 @@
         .menu_wrap li div {display: none;}
 
         .gnb_aside {margin-bottom:50%;}
-     
+        
 
 
 
         .menu_wrap li div {width:50%;}
 
+
+
         .footer_content_left>p {font-size: 14px;}
         .footer_content_left > div {padding-right:18px; margin-right: 18px;}
-        .footer_content_right > div {margin-top : 20px;}
+        .footer_content_right > div {margin : 20px 0;}
+        
+    }
+    @media screen and (max-width: 360px)
+    {
+        .footer_content_left>div {font-size:20px;}
+        .footer_content_left > div {padding-right:10px; margin-right: 10px;}
+        .footer_content_left>p {font-size: 12px;}
     }
