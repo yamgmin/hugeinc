@@ -16,67 +16,120 @@
     <link rel="stylesheet" type="text/css" href="css/about.css"> <!-- work 화면 css -->
   
     <!-- javascript -->
-<script>
+    <script>
 
-    var header_state = 0; /* 로고 클릭 상태*/
-
+        var header_state = 0; /* 로고 클릭 상태*/
+        
         function logoClick() {
-            if (header_state == 0 ) {
-                document.getElementById("home_header").style ="visibility:visible;";
-                header_state = 1; } /* 해더 보이기 */
-            else {document.getElementById("home_header").style ="visibility:hidden;";
-                header_state = 0; } /* 해더 안보이기 */
-
-        }
-</script>
-
-<body>
-
-    <div id="logo" onclick="logoClick()">H</div>
-
-<!-- 로고 시작-->
-<header id="home_header">
-    
-    <nav class="gnb"> 
-
-        <ul class="menu_wrap">
-            <li>
-                <a href="index.html">Hello.</a>
-                <p>Today at Huge.</p>
-                <div></div>
-            </li>
-            <li>
-                <a href="index_work.html">Work.</a>
-                <p>What we've made.</p>
-                <div></div>
-            </li>
-            <li>
-                <a href="index_about.html">About.</a>
-                <p>Who we are</p>
-                <div></div>
-            </li>
-            <li>
-                <a>Carrers.</a>
-                <p>Join the team.</p>
-                <div></div>
-            </li>
-            <li>
-                <a>Contact.</a>
-                <p>Get in touch.</p>
-                <div></div>
-            </li>
-            
-        </ul>
-
-        <div class="gnb_aside"> 
-            <p>Explore our thought leadership at</p>
-            <a>MAGENTA<span>.</span></a>
+        if (document.body.clientWidth > 767)
+            {
+                if (header_state == 0 ) {
+                    document.getElementById("home_header").style="animation-name:header_animation_on; animation-duration:0.5s; animation-fill-mode:forwards;";
+                    
+                    document.getElementById("main").style = "padding-top:440px";
+                    document.getElementById("logo").style.display ="none";
+                    document.getElementById("logo_open").style.display ="flex";
+                    header_state = 1; } /* 해더 보이기 */
+                else {
+        
+                    document.getElementById("home_header").style="animation-name:header_animation_off; animation-duration:0.5s;";
+                    document.getElementById("main").style = "padding-top:0px";
+                    document.getElementById("logo_open").style.display ="none";
+                    document.getElementById("logo").style.display ="flex";
+                    header_state = 0; } /* 해더 보이기 */
+                
+            }
+        
+                else { if (header_state == 0 ) {
+                    document.getElementById("home_header").style="animation-name:header_animation_m_on; animation-duration:0.5s;";
+                    document.getElementById("home_header").style.height="80vh";
+                    document.getElementById("main").style="padding-top:440px;"
+                    document.getElementById("logo").style.display ="none";
+                    document.getElementById("logo_open").style.display ="flex";
+                    header_state = 1;}
+                    
+        
+                else {
+                    document.getElementById("home_header").style="animation-name:header_animation_m_off; animation-duration:0.5s;";
+                    document.getElementById("home_header").style.height="0px";
+                    document.getElementById("main").style="padding-top:0px";
+                    document.getElementById("logo_open").style.display ="none";
+                    document.getElementById("logo").style.display ="flex";
+                    header_state = 0;}
+                }
+            }
+                    
+        
+        </script>
+        
+        </head>
+        
+        <body>
+        
+        
+        <div>
+            <div id="logo" onclick="logoClick()">H</div>
+            <div id="logo_open" onclick="logoClick()">HUGE</div>
         </div>
-    </nav>
-
-</header>
-
-<main>
+            
+        <!-- 로고 시작-->
+            <header id="home_header">
+            
+                <nav class="gnb"> 
+        
+                    <ul class="menu_wrap">
+                        <li>
+                            <a href="index.html">Hello.</a>
+                            <hr>
+                            <p>Today at Huge.</p>
+                            <div></div>
+        
+                        </li>
+                        <li>
+                            <a href="index_work.html">Work.</a>
+                            <hr>
+                            <p>What we've made.</p>
+                            <div></div>
+        
+                        </li>
+                        <li>
+        
+                            <a href="index_about.html">About.</a>
+                            <hr>
+                            <p>Who we are</p>
+                            <div></div>
+        
+        
+                        </li>
+                        <li>
+        
+                            <a href="index_careers.html">Carrers.</a>
+                            <hr>
+                            <p>Join the team.</p>
+                            <div></div>
+        
+        
+                        </li>
+                        <li>
+                            <a href="index_contact.html">Contact.</a>
+                            <hr>
+                            <p>Get in touch.</p>
+                            <div></div>
+        
+                        </li>
+                        
+                    </ul>
+            
+                    <div class="gnb_aside"> 
+                        <p>Explore our thought leadership at</p>
+                        <a>MAGENTA<span>.</span></a>
+                    </div>
+                </nav>
+        
+            </header>
+         <!-- 로고 끝 -->
+        
+         <main id="main">
 
     <section class="hero hero_about">
     
@@ -221,6 +274,7 @@
                 <ul class="our_offices_list white">
                     <li><h6><a>Atlanta.</a></h6>
                         <p>atl@hugeinc.com</p>
+                        
                     </li>
                     <li><h6><a>Bogotá.</a></h6>
                         <p>bog@hugeinc.com</p>
@@ -269,47 +323,78 @@
         <div class="our_leadership_container">
             <div class="section_subtitle_no_padding">
                 <hr class="section_subtitle_rule_black">
-                <h6 class="black">Our offices.</h6>
+                <h6 class="black">Our leadership.</h6>
 
             </div>
                 <ul class="our_leadership_list black">
                     <li><h6><a>Pete Stein</a></h6>
                         <p>CEO</p>
+
                     </li>
+                    
                     <li><h6><a>Bogotá.</a></h6>
                         <p>bog@hugeinc.com</p>
+
                     </li>
-                    <li><h6><a>Brooklyn.</a></h6>
+                    <li>
+                        <h6><a>Brooklyn.</a></h6>
                         <p>bk@hugeinc.com</p>
+
                     </li>
-                    <li><h6><a>Chicago.</a></h6>
+                    <li>
+                        <h6><a>Chicago.</a></h6>
                         <p>chi@hugeinc.com</p>
+
                     </li>
-                    <li><h6><a>DC.</a></h6>
+                    <li>
+                        <h6><a>DC.</a></h6>
                         <p>dc@hugeinc.com</p>
+
                     </li>
-                    <li><h6><a>Detroit.</a></h6>
+                    <li>
+
+                        <h6><a>Detroit.</a></h6>
                         <p>det@hugeinc.com</p>
+
                     </li>
-                    <li><h6><a>London.</a></h6>
+                    <li>
+
+                        <h6><a>London.</a></h6>
                         <p>ldn@hugeinc.com</p>
+
                     </li>
-                    <li><h6><a>Los Angeles.</a></h6>
+                    <li>
+
+                        <h6><a>Los Angeles.</a></h6>
                         <p>la@hugeinc.com</p>
+
                     </li>
-                    <li><h6><a>Medellín.</a></h6>
+                    <li>
+
+                        <h6><a>Medellín.</a></h6>
                         <p>mde@hugeinc.com</p>
+
                     </li>
-                    <li><h6><a>Oakland.</a></h6>
+                    <li>
+
+                        <h6><a>Oakland.</a></h6>
                         <p>oak@hugeinc.com</p>
+
                     </li>
-                    <li><h6><a>Singapore.</a></h6>
+                    <li>
+
+                        <h6><a>Singapore.</a></h6>
                         <p>sgp@hugeinc.com</p>
+
                     </li>
-                    <li><h6><a>Tokyo.</a></h6>
+                    <li>
+
+                        <h6><a>Tokyo.</a></h6>
                         <p>tyo@hugeinc.com</p>
                     </li>
-                    <li><h6><a>Toronto.</a></h6>
+                    <li>
+
+                        <h6><a>Toronto.</a></h6>
                         <p>to@hugeinc.com</p>
                     </li>
                     
@@ -320,6 +405,30 @@
 
     </section>
 </main>
+
+<div class="work_05">
+    <div>
+    <div class="work_05_wrap">
+        
+        <a class="work_05_left">
+        </a>
+        
+        <a class="work_05_right">
+            
+            <h2>The Dawn of Voice Search.
+
+            </h2>
+                
+            <p>More than half of all searches will be voice-based by 2020. Here’s how every brand should prepare for the upcoming SEO revolution.</p>
+        </a>
+    </div>
+    </div>
+
+
+
+
+</div>
+
 
 
 <!-- footer 시작 -->
