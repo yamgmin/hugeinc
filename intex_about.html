@@ -16,23 +16,61 @@
     <link rel="stylesheet" type="text/css" href="css/about.css"> <!-- work 화면 css -->
   
     <!-- javascript -->
-<script>
+    <script>
 
-    var header_state = 0; /* 로고 클릭 상태*/
-
+        var header_state = 0; /* 로고 클릭 상태*/
+        
         function logoClick() {
-            if (header_state == 0 ) {
-                document.getElementById("home_header").style ="visibility:visible;";
-                header_state = 1; } /* 해더 보이기 */
-            else {document.getElementById("home_header").style ="visibility:hidden;";
-                header_state = 0; } /* 해더 안보이기 */
-
-        }
-</script>
-
-<body>
-
-    <div id="logo" onclick="logoClick()">H</div>
+        if (document.body.clientWidth > 767)
+            {
+                if (header_state == 0 ) {
+                    document.getElementById("home_header").style="animation-name:header_animation_on; animation-duration:0.5s; animation-fill-mode:forwards;";
+                    
+                    document.getElementById("main").style = "padding-top:440px";
+                    document.getElementById("logo").style.display ="none";
+                    document.getElementById("logo_open").style.display ="flex";
+                    header_state = 1; } /* 해더 보이기 */
+                else {
+        
+                    document.getElementById("home_header").style="animation-name:header_animation_off; animation-duration:0.5s;";
+                    document.getElementById("main").style = "padding-top:0px";
+                    document.getElementById("logo_open").style.display ="none";
+                    document.getElementById("logo").style.display ="flex";
+                    header_state = 0; } /* 해더 보이기 */
+                
+            }
+        
+                else { if (header_state == 0 ) {
+                    document.getElementById("home_header").style="animation-name:header_animation_m_on; animation-duration:0.5s;";
+                    document.getElementById("home_header").style.height="80vh";
+                    document.getElementById("main").style="padding-top:600px;"
+                    document.getElementById("logo").style.display ="none";
+                    document.getElementById("logo_open").style.display ="flex";
+                    header_state = 1;}
+                    
+        
+                else {
+                    document.getElementById("home_header").style="animation-name:header_animation_m_off; animation-duration:0.5s;";
+                    document.getElementById("home_header").style.height="0px";
+                    document.getElementById("main").style="padding-top:0px";
+                    document.getElementById("logo_open").style.display ="none";
+                    document.getElementById("logo").style.display ="flex";
+                    header_state = 0;}
+                }
+            }
+                    
+        
+        </script>
+        
+        </head>
+        
+        <body>
+        
+        
+        <div>
+            <div id="logo" onclick="logoClick()">H</div>
+            <div id="logo_open" onclick="logoClick()">HUGE</div>
+        </div>
 
 <!-- 로고 시작-->
 <header id="home_header">
@@ -76,7 +114,7 @@
 
 </header>
 
-<main>
+<main id="main">
 
     <section class="hero hero_about">
     
