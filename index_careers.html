@@ -16,24 +16,61 @@
     <link rel="stylesheet" type="text/css" href="css/careers.css"> <!-- work 화면 css -->
   
     <!-- javascript -->
-<script>
+    <script>
 
-    var header_state = 0; /* 로고 클릭 상태*/
-
+        var header_state = 0; /* 로고 클릭 상태*/
+        
         function logoClick() {
-            if (header_state == 0 ) {
-                document.getElementById("home_header").style ="visibility:visible;";
-                header_state = 1; } /* 해더 보이기 */
-            else {document.getElementById("home_header").style ="visibility:hidden;";
-                header_state = 0; } /* 해더 안보이기 */
-
-        }
-</script>
-
-<body>
-
-    <div id="logo" onclick="logoClick()">H</div>
-
+        if (document.body.clientWidth > 767)
+            {
+                if (header_state == 0 ) {
+                    document.getElementById("home_header").style="animation-name:header_animation_on; animation-duration:0.5s; animation-fill-mode:forwards;";
+                    
+                    document.getElementById("main").style = "padding-top:440px";
+                    document.getElementById("logo").style.display ="none";
+                    document.getElementById("logo_open").style.display ="flex";
+                    header_state = 1; } /* 해더 보이기 */
+                else {
+        
+                    document.getElementById("home_header").style="animation-name:header_animation_off; animation-duration:0.5s;";
+                    document.getElementById("main").style = "padding-top:0px";
+                    document.getElementById("logo_open").style.display ="none";
+                    document.getElementById("logo").style.display ="flex";
+                    header_state = 0; } /* 해더 보이기 */
+                
+            }
+        
+                else { if (header_state == 0 ) {
+                    document.getElementById("home_header").style="animation-name:header_animation_m_on; animation-duration:0.5s;";
+                    document.getElementById("home_header").style.height="80vh";
+                    document.getElementById("main").style="padding-top:440px;"
+                    document.getElementById("logo").style.display ="none";
+                    document.getElementById("logo_open").style.display ="flex";
+                    header_state = 1;}
+                    
+        
+                else {
+                    document.getElementById("home_header").style="animation-name:header_animation_m_off; animation-duration:0.5s;";
+                    document.getElementById("home_header").style.height="0px";
+                    document.getElementById("main").style="padding-top:0px";
+                    document.getElementById("logo_open").style.display ="none";
+                    document.getElementById("logo").style.display ="flex";
+                    header_state = 0;}
+                }
+            }
+                    
+        
+        </script>
+        
+        </head>
+        
+        <body>
+        
+        
+        <div>
+            <div id="logo" onclick="logoClick()">H</div>
+            <div id="logo_open" onclick="logoClick()">HUGE</div>
+        </div>
 <!-- 로고 시작-->
 <header id="home_header">
     
@@ -42,28 +79,42 @@
         <ul class="menu_wrap">
             <li>
                 <a href="index.html">Hello.</a>
+                <hr>
                 <p>Today at Huge.</p>
                 <div></div>
+
             </li>
             <li>
                 <a href="index_work.html">Work.</a>
+                <hr>
                 <p>What we've made.</p>
                 <div></div>
+
             </li>
             <li>
+
                 <a href="index_about.html">About.</a>
+                <hr>
                 <p>Who we are</p>
                 <div></div>
+
+
             </li>
             <li>
+
                 <a href="index_careers.html">Carrers.</a>
+                <hr>
                 <p>Join the team.</p>
                 <div></div>
+
+
             </li>
             <li>
                 <a href="index_contact.html">Contact.</a>
+                <hr>
                 <p>Get in touch.</p>
                 <div></div>
+
             </li>
             
         </ul>
@@ -75,18 +126,18 @@
     </nav>
 
 </header>
-<!-- 로고 끝 -->
+<main id="main">
 
 <section class="hero_video">
     
     <video autoplay muted loop> 
-        <source src ="video/Culture_v10_RESIZE.mp4" type="video/mp4">
+        <source src ="video/careers.mp4" type="video/mp4">
         당신의 브라우저는 이 비디오 형식을 지원하지 않습니다.
 
 
     </video>
 
-    <h2 style="width:200px; height:100px; background-color: rgba(234, 23, 140, 0.6); color: white; position: absolute; top:45vh; left:45vw;">Hello.</h2>
+    <h2 class="play">></h2>
 </section>
 
 <section class="call_to_action">
