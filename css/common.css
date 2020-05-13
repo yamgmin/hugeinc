@@ -42,16 +42,16 @@
     
     p {font-family: Galaxie-Book; -webkit-font-smoothing: antialiased;}
     
-    h1 {font-size: 300px; line-height: 300px;letter-spacing: -4px;}
-    h2 {font-size: 80px; line-height: 80px; letter-spacing: -2px;}
-    h3 {font-size: 56px; line-height: 70px; letter-spacing: -4px;}
+    h1 {font-size: 300px; line-height: 300px;}
+    h2 {font-size: 80px; line-height: 80px;}
+    h3 {font-size: 56px; line-height: 70px;}
     h4 {font-size: 44px; line-height: 44px;}
     h5 {font-size: 24px; line-height: 30px;}
     h6 {font-size: 22px; line-height: 26px;}
     
     p {font-size: 18px; line-height: 34px; letter-spacing: -0.27504;}
 
-    .h3_serif {font-family: Galaxie-Book; font-size: 56px; line-height: 70px; letter-spacing: -4px;}
+    .h3_serif {font-family: Galaxie-Book; font-size: 56px; line-height: 70px;}
     
     .h4 {font-size: 44px; line-height: 44px;}
 
@@ -113,7 +113,7 @@
     
      nav {width: 100%; height: 480px; display : flex; justify-content: center; align-items: center; box-sizing : border-box; position: relative;}
  
-     #logo {width:74px; height: 74px; font-family: HugeGothic-Bold;display: flex; justify-content: center; align-items: center; font-size: 32px; color: #ea178c; background-color: white; position: fixed; top:50px; left : calc(50% - 37px); z-index: 200; padding-top:2px; box-sizing: border-box;background: linear-gradient(315deg, #ffffff, #ea178c,#ffffff,  #ea178c,#ffffff, #ffffff);
+     #logo {width:74px; height: 74px; font-family: HugeGothic-Bold;display: flex; justify-content: center; align-items: center; font-size: 32px; color: #ea178c; background-color: white; position: fixed; top:50px; left : calc(50% - 37px); z-index: 200; padding-top:2px; box-sizing: border-box;cursor: pointer;background: linear-gradient(315deg, #ffffff, #ea178c,#ffffff,  #ea178c,#ffffff, #ffffff);
         background-size: 1800% 1800%;
         
         animation: AnimationName 0.6s;animation-iteration-count : 1;}
@@ -124,7 +124,7 @@
             100%{background-position:100% 100%}
         }
     #logo_open {width:74px; height:74px; font-family: HugeGothic-Bold;display: flex; justify-content: center; align-items: center; font-size: 32px;line-height: 32px; color: #ea178c;   position: fixed; top:50px; left : calc(50% - 37px); z-index: 200; padding-top:2px; box-sizing: border-box; display: none; background-color: none;
-    }
+        cursor: pointer;}
         
        
  

@@ -43,15 +43,15 @@
 .our_culture {width : 100%; background-color: #cecdcf; padding : 140 0 100px; box-sizing: border-box; position: relative;}
 .our_culture_container {width: 74.68354%; margin: 0 auto; }
 .our_culture_title {margin: 120px 0 100px;}
-.our_culture_list {width:100%; display: flex; flex-wrap: wrap; position: relative; z-index: 2;}
+.our_culture_list {width:100%; display: flex; flex-wrap: wrap; position: relative; z-index: 3;}
 .our_culture_list li {width:23.72881%; min-height: 200px; margin-left: 1.69492%; }
-.our_culture_list h5 {margin-bottom :7px;}
-.our_culture_list p {width:85%;}
+.our_culture_list h5 {margin-bottom :7px; }
+.our_culture_list p {width:85%; }
 .our_culture_list li:nth-child(4n+1) {margin-left: 0;}
 
 .our_culture_list a:hover {color:#ea178c;}
 
-.our_culture_background {width: 38%;position: absolute; bottom:-8vh; right: 12%; z-index: 200;}
+.our_culture_background {width: 38%;position: absolute; bottom:-8vh; right: 12%; z-index: 2;}
 
 .our_culture_background img {width: 100%;}
 
@@ -172,7 +172,8 @@ padding-top: 20px;margin-bottom: 25px; border-top: 1px solid rgba(255,255,255,0.
     .our_leadership_list li:nth-child(2) {border-top:1px solid gray;}
     .our_leadership_list li:nth-child(3) {border-top:1px solid gray;}
 
-    .work_05_wrap {flex-direction: column;}
+    .work_05 > div:first-child {padding:0}
+    .work_05_wrap {flex-direction: column; padding: 80px 0;}
     .work_05_left {width:35.89744%; padding-bottom:35.89744%;margin-left: 10%;}
     .work_05_right {width:74.35897%;margin-right: 2.5641%;margin-left: 10%;margin-top: 50px;}
 }

@@ -103,7 +103,8 @@ overflow: hidden; padding-top:calc(29.9vw - 64px); padding-left:40px ;color:whit
     h2 {font-size : 36px; line-height: 36px;}
     h4 {font-size: 30px;}
 
-    .work_05_wrap {flex-direction: column;}
+    .work_05 > div:first-child {padding:0}
+    .work_05_wrap {flex-direction: column; padding: 80px 0;}
     .work_05_left {width:35.89744%; padding-bottom:35.89744%;margin-left: 10%;}
     .work_05_right {width:74.35897%;margin-right: 2.5641%;margin-left: 10%;margin-top: 50px;}
 
