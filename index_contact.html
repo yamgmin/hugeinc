@@ -174,18 +174,18 @@
     <section class="offices">
         <div class="offices_container">
         <ul class="offices_content">
-            <li>
+            <li id="offices_card">
                 <h4>Atlanta.</h4>
                 <h5>Ayee.</h5>
-                <p>8:43 AM</p>
+                <p id="present_time"></p>
                 <p>+1 404 461 9025</p>
                 <p class="min_height">atl@hugeinc.com</p>
-                <img src="img/Contact/sun-01.svg" class="offices_img">
+                <img src="img/Contact/sun-01.svg" class="offices_img" id="sun_or_moon">
             </li>
             <li>
                 <h4>Bogota.</h4>
                 <h5>Hola.</h5>
-                <p>8:43 AM</p>
+                <p id="present_time"></p>
                 <p>+1 404 461 9025</p>
                 <p class="min_height">atl@hugeinc.com</p>
                 <img src="img/Contact/sun-01.svg" class="offices_img">
@@ -193,7 +193,7 @@
             <li>
                 <h4>BrooKlyn.</h4>
                 <h5>Yo.</h5>
-                <p>8:43 AM</p>
+                <p id="present_time"></p>
                 <p>+1 404 461 9025</p>
                 <p class="min_height">atl@hugeinc.com</p>
                 <img src="img/Contact/sun-01.svg" class="offices_img">
@@ -201,7 +201,7 @@
             <li>
                 <h4>Chicago.</h4>
                 <h5>Hey.</h5>
-                <p>8:43 AM</p>
+                <p id="present_time"></p>
                 <p>+1 404 461 9025</p>
                 <p class="min_height">atl@hugeinc.com</p>
                 <img src="img/Contact/sun-01.svg" class="offices_img">
@@ -209,7 +209,7 @@
             <li>
                 <h4>DC.</h4>
                 <h5>Hi.</h5>
-                <p>8:43 AM</p>
+                <p id="present_time"></p>
                 <p>+1 404 461 9025</p>
                 <p class="min_height">atl@hugeinc.com</p>
                 <img src="img/Contact/sun-01.svg" class="offices_img">
@@ -217,7 +217,7 @@
             <li>
                 <h4>Detoit.</h4>
                 <h5>Whad'up</h5>
-                <p>8:43 AM</p>
+                <p id="present_time"></p>
                 <p>+1 404 461 9025</p>
                 <p class="min_height">atl@hugeinc.com</p>
                 <img src="img/Contact/sun-01.svg" class="offices_img">
@@ -225,7 +225,7 @@
             <li>
                 <h4>London.</h4>
                 <h5>'Ello.</h5>
-                <p>8:43 AM</p>
+                <p id="present_time"></p>
                 <p>+1 404 461 9025</p>
                 <p class="min_height">atl@hugeinc.com</p>
                 <img src="img/Contact/sun-01.svg" class="offices_img">
@@ -233,7 +233,7 @@
             <li>
                 <h4>Los Angeles.</h4>
                 <h5>E'yo.</h5>
-                <p>8:43 AM</p>
+                <p id="present_time"></p>
                 <p>+1 404 461 9025</p>
                 <p class="min_height">atl@hugeinc.com</p>
                 <img src="img/Contact/sun-01.svg" class="offices_img">
@@ -241,7 +241,7 @@
             <li>
                 <h4>Medellin.</h4>
                 <h5>Buenas.</h5>
-                <p>8:43 AM</p>
+                <p id="present_time"></p>
                 <p>+1 404 461 9025</p>
                 <p class="min_height">atl@hugeinc.com</p>
                 <img src="img/Contact/sun-01.svg" class="offices_img">
@@ -249,7 +249,7 @@
             <li>
                 <h4>Oakland.</h4>
                 <h5>Sup.</h5>
-                <p>8:43 AM</p>
+                <p id="present_time"></p>
                 <p>+1 404 461 9025</p>
                 <p class="min_height">atl@hugeinc.com</p>
                 <img src="img/Contact/sun-01.svg" class="offices_img">
@@ -257,7 +257,7 @@
             <li>
                 <h4>Singapore.</h4>
                 <h5>你好</h5>
-                <p>8:43 AM</p>
+                <p id="present_time"></p>
                 <p>+1 404 461 9025</p>
                 <p class="min_height">atl@hugeinc.com</p>
                 <img src="img/Contact/sun-01.svg" class="offices_img">
@@ -265,7 +265,7 @@
             <li>
                 <h4>Toronto.</h4>
                 <h5>Eh?</h5>
-                <p>8:43 AM</p>
+                <p id="present_time"></p>
                 <p>+1 404 461 9025</p>
                 <p class="min_height">atl@hugeinc.com</p>
                 <img src="img/Contact/sun-01.svg" class="offices_img">
@@ -273,7 +273,7 @@
             <li>
                 <h4>Tokyo.</h4>
                 <h5>こんにちは</h5>
-                <p>8:43 AM</p>
+                <p id="present_time"></p>
                 <p>+1 404 461 9025</p>
                 <p class="min_height">atl@hugeinc.com</p>
                 <img src="img/Contact/sun-01.svg" class="offices_img">
@@ -334,6 +334,8 @@
 </footer>
 <!-- footer 끝 -->
 <script>
+
+    // Greeting Code
     var greetingGlobal = ["Hello.","Hola.","Buenas.","Ola.","Ei.","你好.","E'yo.","Ello.","Aye."]
     var greetingIndex = 0;
     setInterval (outputGreeting,1000);
@@ -342,6 +344,29 @@
     innerHTML=greetingGlobal[greetingIndex];
     greetingIndex = greetingIndex + 1;
     if (greetingIndex > 8) {greetingIndex = 0;}
+    // greetingIndex += 1;
+    }
+
+    // Office Hour
+    
+    var presentHour = new Date().getHours();
+    var presentMin = new Date().getMinutes();
+    var amPm = "AM";
+    if (presentHour < 12) {
+    document.getElementById("present_time").
+    innerHTML=presentHour + ":" + presentMin + "" + amPm;
+
+
+    }
+    else { amPm ="PM";
+    if (presentHour != 12){
+    presentHour = presentHour - 12;}
+    document.getElementById("present_time").
+    innerHTML=presentHour + ":" + presentMin + "" + amPm;
+    document.getElementById("sun_or_moon").
+    src="img/contact/moon-01-01.svg";
+    document.getElementById("offices_card").style="background-color:#161616; color:white;";
+
     }
 </script>
 </body>
