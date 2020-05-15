@@ -4,7 +4,7 @@
 /* about.css 요소 */
 .hero_contact {background-image: url(../img/contact/RoyalPalms-16__2__crop__1___1___2_.jpg);}
 
-.hero_title {width: 74.68354%; height: calc(80vh - 200px); display: flex; flex-direction: column; justify-content: flex-end; margin: auto; font-size: 170px;}
+.hero_title {width: 74.68354%; height: calc(70vh - 200px); display: flex; flex-direction: column; justify-content: flex-end; margin: auto; font-size: 170px; line-height: 170px;}
 
 
 
@@ -48,6 +48,7 @@
 
 @media screen and (max-width:999px)
 {
+    .hero {height:70vh;}
     .hero_title {font-size:104px; line-height: 91px;}
     
     
