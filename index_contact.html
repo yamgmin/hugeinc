@@ -131,7 +131,7 @@
 
     <section class="hero hero_contact">
     
-        <h1 class="hero_title white">Born in Brooklyn.</h1>
+        <h1 class="hero_title white"id="greeting">Born in Brooklyn.</h1>
     
     </section>
 
@@ -176,103 +176,103 @@
         <ul class="offices_content">
             <li>
                 <h4>Atlanta.</h4>
-                <h5>Ayee</h5>
+                <h5>Ayee.</h5>
                 <p>8:43 AM</p>
                 <p>+1 404 461 9025</p>
                 <p class="min_height">atl@hugeinc.com</p>
                 <img src="img/Contact/sun-01.svg" class="offices_img">
             </li>
             <li>
-                <h4>Atlanta.</h4>
-                <h5>Ayee</h5>
+                <h4>Bogota.</h4>
+                <h5>Hola.</h5>
                 <p>8:43 AM</p>
                 <p>+1 404 461 9025</p>
                 <p class="min_height">atl@hugeinc.com</p>
                 <img src="img/Contact/sun-01.svg" class="offices_img">
             </li>
             <li>
-                <h4>Atlanta.</h4>
-                <h5>Ayee</h5>
+                <h4>BrooKlyn.</h4>
+                <h5>Yo.</h5>
                 <p>8:43 AM</p>
                 <p>+1 404 461 9025</p>
                 <p class="min_height">atl@hugeinc.com</p>
                 <img src="img/Contact/sun-01.svg" class="offices_img">
             </li>
             <li>
-                <h4>Atlanta.</h4>
-                <h5>Ayee</h5>
+                <h4>Chicago.</h4>
+                <h5>Hey.</h5>
                 <p>8:43 AM</p>
                 <p>+1 404 461 9025</p>
                 <p class="min_height">atl@hugeinc.com</p>
                 <img src="img/Contact/sun-01.svg" class="offices_img">
             </li>
             <li>
-                <h4>Atlanta.</h4>
-                <h5>Ayee</h5>
+                <h4>DC.</h4>
+                <h5>Hi.</h5>
                 <p>8:43 AM</p>
                 <p>+1 404 461 9025</p>
                 <p class="min_height">atl@hugeinc.com</p>
                 <img src="img/Contact/sun-01.svg" class="offices_img">
             </li>
             <li>
-                <h4>Atlanta.</h4>
-                <h5>Ayee</h5>
+                <h4>Detoit.</h4>
+                <h5>Whad'up</h5>
                 <p>8:43 AM</p>
                 <p>+1 404 461 9025</p>
                 <p class="min_height">atl@hugeinc.com</p>
                 <img src="img/Contact/sun-01.svg" class="offices_img">
             </li>
             <li>
-                <h4>Atlanta.</h4>
-                <h5>Ayee</h5>
+                <h4>London.</h4>
+                <h5>'Ello.</h5>
                 <p>8:43 AM</p>
                 <p>+1 404 461 9025</p>
                 <p class="min_height">atl@hugeinc.com</p>
                 <img src="img/Contact/sun-01.svg" class="offices_img">
             </li>
             <li>
-                <h4>Atlanta.</h4>
-                <h5>Ayee</h5>
+                <h4>Los Angeles.</h4>
+                <h5>E'yo.</h5>
                 <p>8:43 AM</p>
                 <p>+1 404 461 9025</p>
                 <p class="min_height">atl@hugeinc.com</p>
                 <img src="img/Contact/sun-01.svg" class="offices_img">
             </li>
             <li>
-                <h4>Atlanta.</h4>
-                <h5>Ayee</h5>
+                <h4>Medellin.</h4>
+                <h5>Buenas.</h5>
                 <p>8:43 AM</p>
                 <p>+1 404 461 9025</p>
                 <p class="min_height">atl@hugeinc.com</p>
                 <img src="img/Contact/sun-01.svg" class="offices_img">
             </li>
             <li>
-                <h4>Atlanta.</h4>
-                <h5>Ayee</h5>
+                <h4>Oakland.</h4>
+                <h5>Sup.</h5>
                 <p>8:43 AM</p>
                 <p>+1 404 461 9025</p>
                 <p class="min_height">atl@hugeinc.com</p>
                 <img src="img/Contact/sun-01.svg" class="offices_img">
             </li>
             <li>
-                <h4>Atlanta.</h4>
-                <h5>Ayee</h5>
+                <h4>Singapore.</h4>
+                <h5>你好</h5>
                 <p>8:43 AM</p>
                 <p>+1 404 461 9025</p>
                 <p class="min_height">atl@hugeinc.com</p>
                 <img src="img/Contact/sun-01.svg" class="offices_img">
             </li>
             <li>
-                <h4>Atlanta.</h4>
-                <h5>Ayee</h5>
+                <h4>Toronto.</h4>
+                <h5>Eh?</h5>
                 <p>8:43 AM</p>
                 <p>+1 404 461 9025</p>
                 <p class="min_height">atl@hugeinc.com</p>
                 <img src="img/Contact/sun-01.svg" class="offices_img">
             </li>
             <li>
-                <h4>Atlanta.</h4>
-                <h5>Ayee</h5>
+                <h4>Tokyo.</h4>
+                <h5>こんにちは</h5>
                 <p>8:43 AM</p>
                 <p>+1 404 461 9025</p>
                 <p class="min_height">atl@hugeinc.com</p>
@@ -333,5 +333,15 @@
 
 </footer>
 <!-- footer 끝 -->
-
+<script>
+    var greetingGlobal = ["Hello.","Hola.","Buenas.","Ola.","Ei.","你好.","E'yo.","Ello.","Aye."]
+    var greetingIndex = 0;
+    setInterval (outputGreeting,1000);
+    function outputGreeting() {
+    document.getElementById("greeting").
+    innerHTML=greetingGlobal[greetingIndex];
+    greetingIndex = greetingIndex + 1;
+    if (greetingIndex > 8) {greetingIndex = 0;}
+    }
+</script>
 </body>
