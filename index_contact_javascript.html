@@ -19,58 +19,38 @@
       <script>
 
         var header_state = 0; /* 로고 클릭 상태*/
-        var border_state = 0; /* 보더 보이는 상태 */
-        
-        function borderShow() {
-            if (border_state == 0)
-            {document.getElementById("border").style = "border-top:90px solid #f4f4f4; border-right:50px solid #f4f4f4; border-bottom:50px solid #f4f4f4;border-left: 50px solid #f4f4f4;";
-            border_state = 1;}
-        
-        }
-        function borderHide() {
-            if (border_state == 1 && header_state == 0)
-            {document.getElementById("border").style = "border-top:90px solid #f4f4f4; border-right:0px solid #f4f4f4; border-bottom:0px solid #f4f4f4;border-left: 0px solid #f4f4f4;";
-            border_state = 0 ;
-            }
-        
-        }
         
         function logoClick() {
         if (document.body.clientWidth > 767)
             {
                 if (header_state == 0 ) {
-        
-                    document.getElementById("home_header").style="animation-name:header_animation_on; animation-duration:0.25s; animation-fill-mode:forwards;";
+                    document.getElementById("home_header").style="animation-name:header_animation_on; animation-duration:0.5s; animation-fill-mode:forwards;";
                     
                     document.getElementById("main").style = "padding-top:440px";
                     document.getElementById("logo").style.display ="none";
                     document.getElementById("logo_open").style.display ="flex";
-        
-                    header_state = 1;  /* 해더 보이기 */
-                    document.getElementById("border").style = "border-top:90px solid #f4f4f4; border-right:50px solid #f4f4f4; border-bottom:0px solid #f4f4f4;border-left: 50px solid #f4f4f4;";
-                }
+                    header_state = 1; } /* 해더 보이기 */
                 else {
         
-                    document.getElementById("home_header").style="animation-name:header_animation_off; animation-duration:0.25s;";
+                    document.getElementById("home_header").style="animation-name:header_animation_off; animation-duration:0.5s;";
                     document.getElementById("main").style = "padding-top:0px";
                     document.getElementById("logo_open").style.display ="none";
                     document.getElementById("logo").style.display ="flex";
-                    header_state = 0;  
-                    document.getElementById("border").style = "border-top:90px solid #f4f4f4; border-right:50px solid #f4f4f4; border-bottom:50px solid #f4f4f4;border-left: 50px solid #f4f4f4;";} /* 해더 보이기 */
+                    header_state = 0; } /* 해더 보이기 */
                 
             }
         
                 else { if (header_state == 0 ) {
-                    document.getElementById("home_header").style="animation-name:header_animation_m_on; animation-duration:0.25s;";
+                    document.getElementById("home_header").style="animation-name:header_animation_m_on; animation-duration:0.5s;";
                     document.getElementById("home_header").style.height="80vh";
-                    document.getElementById("main").style="padding-top:600px";
+                    document.getElementById("main").style="padding-top:440px;"
                     document.getElementById("logo").style.display ="none";
                     document.getElementById("logo_open").style.display ="flex";
                     header_state = 1;}
                     
         
                 else {
-                    document.getElementById("home_header").style="animation-name:header_animation_m_off; animation-duration:0.25s;";
+                    document.getElementById("home_header").style="animation-name:header_animation_m_off; animation-duration:0.5s;";
                     document.getElementById("home_header").style.height="0px";
                     document.getElementById("main").style="padding-top:0px";
                     document.getElementById("logo_open").style.display ="none";
@@ -78,9 +58,7 @@
                     header_state = 0;}
                 }
             }
-        
-        
-                
+                    
         
         </script>
         
@@ -90,11 +68,9 @@
         
         
         <div>
-            <div id="logo" onclick="logoClick()" onmouseover="borderShow()" onmouseout="borderHide()">H</div>
+            <div id="logo" onclick="logoClick()">H</div>
             <div id="logo_open" onclick="logoClick()">HUGE</div>
         </div>
-        <a id="border"></a>
-            
 <!-- 로고 시작-->
 <header id="home_header">
     
@@ -198,106 +174,106 @@
     <section class="offices">
         <div class="offices_container">
         <ul class="offices_content">
-            <li class="offices_list">
+            <li>
                 <h4>Atlanta.</h4>
                 <h5>Ayee.</h5>
-                <p><span class="hour"></span>:<span class="min"></span><span class="ampm"></span> </p>
+                <p id="atlanta"></p>
                 <p>+1 404 461 9025</p>
                 <p class="min_height">atl@hugeinc.com</p>
                 <img src="img/Contact/sun-01.svg" class="offices_img">
             </li>
-            <li class="offices_list">
+            <li>
                 <h4>Bogota.</h4>
                 <h5>Hola.</h5>
-                <p><span class="hour"></span>:<span class="min"></span><span class="ampm"></span> </p>
+                <p id="bogota"></p>
                 <p>+571 3810606</p>
                 <p class="min_height">bog@hugeinc.com</p>
                 <img src="img/Contact/sun-01.svg" class="offices_img">
             </li>
-            <li class="offices_list">
+            <li>
                 <h4>BrooKlyn.</h4>
                 <h5>Yo.</h5>
-                <p><span class="hour"></span>:<span class="min"></span><span class="ampm"></span> </p>
+                <p id="brooklyn"></p>
                 <p>+1 718 625 4843</p>
                 <p class="min_height">bk@hugeinc.com</p>
                 <img src="img/Contact/sun-01.svg" class="offices_img">
             </li>
-            <li class="offices_list">
+            <li>
                 <h4>Chicago.</h4>
                 <h5>Hey.</h5>
-                <p><span class="hour"></span>:<span class="min"></span><span class="ampm"></span> </p>
+                <p id="chicago"></p>
                 <p>+1 312 637 3150</p>
                 <p class="min_height">chi@hugeinc.com</p>
                 <img src="img/Contact/sun-01.svg" class="offices_img">
             </li>
-            <li class="offices_list">
+            <li>
                 <h4>DC.</h4>
                 <h5>Hi.</h5>
-                <p><span class="hour"></span>:<span class="min"></span><span class="ampm"></span> </p>
+                <p id="dc"></p>
                 <p>+1 202 350 4600</p>
                 <p class="min_height">dc@hugeinc.com</p>
                 <img src="img/Contact/sun-01.svg" class="offices_img">
             </li>
-            <li class="offices_list">
+            <li>
                 <h4>Detoit.</h4>
                 <h5>Whad'up</h5>
-                <p><span class="hour"></span>:<span class="min"></span><span class="ampm"></span> </p>
+                <p id="detoit"></p>
                 <p>+1 248 731 0600</p>
                 <p class="min_height">det@hugeinc.com</p>
                 <img src="img/Contact/sun-01.svg" class="offices_img">
             </li>
-            <li class="offices_list">
+            <li>
                 <h4>London.</h4>
                 <h5>'Ello.</h5>
-                <p><span class="hour"></span>:<span class="min"></span><span class="ampm"></span> </p>
+                <p id="london"></p>
                 <p>+44 (0)203 356 1900</p>
                 <p class="min_height">ldn@hugeinc.com</p>
                 <img src="img/Contact/sun-01.svg" class="offices_img">
             </li>
-            <li class="offices_list">
+            <li>
                 <h4>Los Angeles.</h4>
                 <h5>E'yo.</h5>
-                <p><span class="hour"></span>:<span class="min"></span><span class="ampm"></span> </p>
+                <p id="angeles"></p>
                 <p>+1 310 499 7700</p>
                 <p class="min_height">la@hugeinc.com</p>
                 <img src="img/Contact/sun-01.svg" class="offices_img">
             </li>
-            <li class="offices_list">
+            <li>
                 <h4>Medellin.</h4>
                 <h5>Buenas.</h5>
-                <p ><span class="hour"></span>:<span class="min"></span><span class="ampm"></span> </p>
+                <p id="medellin"></p>
                 <p>+57 4 604 5535</p>
                 <p class="min_height">mde@hugeinc.com</p>
                 <img src="img/Contact/sun-01.svg" class="offices_img">
             </li>
-            <li class="offices_list">
+            <li>
                 <h4>Oakland.</h4>
                 <h5>Sup.</h5>
-                <p><span class="hour"></span>:<span class="min"></span><span class="ampm"></span> </p>
+                <p id="oakland"></p>
                 <p>+1 510 735 0700</p>
                 <p class="min_height">oak@hugeinc.com</p>
                 <img src="img/Contact/sun-01.svg" class="offices_img">
             </li>
-            <li class="offices_list">
+            <li >
                 <h4>Singapore.</h4>
                 <h5>你好</h5>
-                <p><span class="hour"></span>:<span class="min"></span><span class="ampm"></span> </p>
+                <p id="singapore"></p>
                 <p>+65 6303 0592</p>
                 <p class="min_height">sgp@hugeinc.com</p>
                 <img src="img/Contact/sun-01.svg" class="offices_img">
             </li>
-            <li class="offices_list">
+            <li>
                 <h4>Toronto.</h4>
                 <h5>Eh?</h5>
-                <p><span class="hour"></span>:<span class="min"></span><span class="ampm"></span></p>
+                <p id="toronto"></p>
                 <p>+1 416 800 0466</p>
                 <p class="min_height">to@hugeinc.com</p>
                 <img src="img/Contact/sun-01.svg" class="offices_img">
             </li>
-            <li class="offices_list">
+            <li>
                 <h4>Tokyo.</h4>
                 <h5>こんにちは</h5>
-                <p><span class="hour"></span>:<span class="min"></span><span class="ampm"></span> </p>
+                <p id="tokyo"></p>
                 <p>+81 3 4577 7930</p>
                 <p class="min_height">tyo@hugeinc.com</p>
                 <img src="img/Contact/sun-01.svg" class="offices_img">
@@ -371,52 +347,156 @@
     // greetingIndex += 1;
     }
 
+    // Office Hour
     
 
 
     var dateYourCity = new Date(); // 브라우저 시간 - 당신이 위치한 곳의 시간
     var utcHour = dateYourCity.getUTCHours(); // UTC Hour 계산
     var utcMin = dateYourCity.getUTCMinutes(); // UTC Minute 게산
-    var cityTimeOffset = [-4, -5, -4, -5, -4, -4, 1, -7, -5, -7, 8, -4, 9]; 
-
-    for (i=0; i < 13; i++)
-    {
-        document.getElementsByClassName("hour")[i].innerHTML = timeExchange12(timeExchange(cityTimeOffset[i]));
-        document.getElementsByClassName("min")[i].innerHTML = min2digit(utcMin);
-        document.getElementsByClassName("ampm")[i].innerHTML = amPm(timeExchange(cityTimeOffset[i]));
-        if (timeExchange(cityTimeOffset[i]) < 5 || timeExchange(cityTimeOffset[i]) > 20)
-        { 
-        document.getElementsByClassName("offices_list")[i].style ="color:white; background-color:#161616;";
-        document.getElementsByClassName("offices_img")[i].src = "img/contact/moon-01-01.svg";
-    }
-    }
-
-
     
+
+    /*
+    var dateYourCityHour = dateYourCity.getHours();
+    var dateYourCityMin = dateYourCity.getMinutes();
+    
+
+    var timeOffsetMin = dateYourCity.getTimezoneOffset();
+    
+    var timeOffsetHour = timeOffsetMin / 60;
+   
+    
+    var utcHour = dateYourCityHour + timeOffsetHour;
+    */
+
+
+
+    var atlanta = timeExchange(-4) // utcHour - 4
+    /*
+    if (atlanta < 0) {atlanta = atlanta + 24}
+    if (atlanta > 24) {atlanta = atlanta - 24}
+    */
+    var atlantaAmPm = AmPm(atlanta);
+
+    /*
+    if (atlanta < 12) {atlantaAmPm ="AM";}
+    else if {atlantaAmPm = "PM"}
+    */
+
+    var atlanta12 = timeExchange12(atlanta);
+    /*
+    if {atlanta > 12} {atlanta12 = atlanta - 12;}
+    */
+    var atlantaMin2digit = utcMin;
+    /*
+    if (utcMin < 10) {atlantaMin2digit = "0" + utcMin;};
+    */
+    
+    document.getElementById("atlanta").
+    innerHTML= atlanta12 + ":" + atlantaMin2digit + " " + atlantaAmPm;
+
+    var bogota = timeExchange(-5)
+    var bogotataAmPm = AmPm(bogota);
+
+    document.getElementById("bogota").
+    innerHTML= bogota + ":" + utcMin + " " + bogotataAmPm;
+    
+    var brooklyn = timeExchange(-4)
+    var brooklynAmPm = AmPm(brooklyn);
+
+    document.getElementById("brooklyn").
+    innerHTML= brooklyn + ":" + utcMin + " " + brooklynAmPm;
+    
+    var chicago = timeExchange(-5)
+    var chicagoAmPm = AmPm(chicago);
+
+    document.getElementById("chicago").
+    innerHTML= brooklyn + ":" + utcMin + " " + chicagoAmPm;
+    
+    var dc = timeExchange(-4)
+    var dcAmPm = AmPm(dc);
+
+    document.getElementById("dc").
+    innerHTML= brooklyn + ":" + utcMin + " " + dcAmPm;
+ 
+    var detoit = timeExchange(-4)
+    var detoitAmPm = AmPm(detoit);
+
+    document.getElementById("detoit").
+    innerHTML= detoit + ":" + utcMin + " " + detoitAmPm;
+    
+    
+    var london = timeExchange(0)
+    var londonAmPm = AmPm(london);
+
+    document.getElementById("london").
+    innerHTML=london + ":" + utcHour + " " + londonAmPm;
+   
+    var angeles = timeExchange(-7)
+    var angelesAmPm = AmPm(angeles);
+
+    document.getElementById("angeles").
+    innerHTML= angeles + ":" + utcMin + " " + angelesAmPm;
+    
+    var medellin = timeExchange(-5)
+    var medellinAmPm = AmPm(medellin);
+
+    document.getElementById("medellin").
+    innerHTML= medellin + ":" + utcMin + " " + medellinAmPm;
+    
+    var oakland = timeExchange(-7)
+    var oaklandAmPm = AmPm(oakland);
+
+    document.getElementById("oakland").
+    innerHTML= oakland + ":" + utcMin + " " + oaklandAmPm;
+    
+    var singapore = timeExchange(8)
+    var singaporeAmPm = AmPm(singapore);
+
+    document.getElementById("singapore").
+    innerHTML= singapore + ":" + utcMin + " " + singaporeAmPm;
+   
+    var toronto = timeExchange(-4)
+    var torontoAmPm = AmPm(toronto);
+
+    document.getElementById("toronto").
+    innerHTML= toronto + ":" + utcMin + " " + torontoAmPm;
+   
+    var tokyo = timeExchange(9)
+    var tokyoAmPm = AmPm(tokyo);
+    var tokyo12 = timeExchange12(tokyo);
+    var tokyoMin2digit = utcMin;
+   
+    document.getElementById("tokyo").
+    innerHTML= tokyo12 + ":" + tokyoMin2digit + " " + tokyoAmPm;
+
     function timeExchange(a) {
         var exchanged = utcHour + a
         if (exchanged > 24) { exchanged -= 24;}
         else if (exchanged < 0) {exchanged += 24;}
         return exchanged;
     }
-    function timeExchange12(a) {
-        if (a > 12) {a -= 12;}
-        return a;
-    }
-    function min2digit(a){
-        if (a < 10) {a = "0" + a;}
-        return a;
-    }
-    function amPm(a) {
+    function AmPm(a) {
         
         if (a >= 12) {b = "PM";} else {b = "AM";}
         return b; 
     }
-    function iconOpen(a) {
-        var src
-        if(a >=6 && a <=18) {b ="img/contact/sun.svg"} else {b="img/contact/moon-01-01.svg"}
+    function timeExchange12(a) {
+        if (a >12) {b = a - 12;}
+        return b;
     }
+    function Min2digit(a){
+    if (a < 10) {a = "0" + a;};
+    return b;
+    }
+    
 
+    
+    
+    
+
+    
+    
 
    
 </script>
