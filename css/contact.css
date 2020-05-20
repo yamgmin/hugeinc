@@ -24,7 +24,9 @@
 .offices {width:100%; background-color: black;}
 .offices_container {width:89.87432%; margin:0 auto; padding:0 0 100px;}
 .offices_content {width:100%; display: flex; flex-wrap: wrap;}
-.offices_content li {width:33.3%;background-color: white; padding: 115px 70px 30px; border-bottom: solid 1px black;border-right: solid 1px black; position: relative;}
+.offices_list {width:33.3%;background-color: white; padding: 115px 70px 30px; border-bottom: solid 1px black;border-right: solid 1px black; position: relative;}
+
+
 
 .min_height {min-height: 100px;}
 .offices_content li:hover {background-color: rgba(255,255,255,0.5);}
